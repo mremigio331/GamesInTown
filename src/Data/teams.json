@@ -1,0 +1,912 @@
+{
+    "NHL": [
+        {
+            "teamName": "Anaheim Ducks",
+            "city": "Anaheim",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Arizona Coyotes",
+            "city": "Glendale",
+            "state": "Arizona",
+            "metroArea": "Phoenix"
+        },
+        {
+            "teamName": "Boston Bruins",
+            "city": "Boston",
+            "state": "Massachusetts",
+            "metroArea": "Boston"
+        },
+        {
+            "teamName": "Buffalo Sabres",
+            "city": "Buffalo",
+            "state": "New York",
+            "metroArea": "Buffalo"
+        },
+        {
+            "teamName": "Calgary Flames",
+            "city": "Calgary",
+            "state": "Alberta",
+            "metroArea": "Calgary"
+        },
+        {
+            "teamName": "Carolina Hurricanes",
+            "city": "Raleigh",
+            "state": "North Carolina",
+            "metroArea": "Raleigh"
+        },
+        {
+            "teamName": "Chicago Blackhawks",
+            "city": "Chicago",
+            "state": "Illinois",
+            "metroArea": "Chicago"
+        },
+        {
+            "teamName": "Colorado Avalanche",
+            "city": "Denver",
+            "state": "Colorado",
+            "metroArea": "Denver"
+        },
+        {
+            "teamName": "Columbus Blue Jackets",
+            "city": "Columbus",
+            "state": "Ohio",
+            "metroArea": "Columbus"
+        },
+        {
+            "teamName": "Dallas Stars",
+            "city": "Dallas",
+            "state": "Texas",
+            "metroArea": "Dallas-Fort Worth"
+        },
+        {
+            "teamName": "Detroit Red Wings",
+            "city": "Detroit",
+            "state": "Michigan",
+            "metroArea": "Detroit"
+        },
+        {
+            "teamName": "Edmonton Oilers",
+            "city": "Edmonton",
+            "state": "Alberta",
+            "metroArea": "Edmonton"
+        },
+        {
+            "teamName": "Florida Panthers",
+            "city": "Sunrise",
+            "state": "Florida",
+            "metroArea": "Miami"
+        },
+        {
+            "teamName": "Los Angeles Kings",
+            "city": "Los Angeles",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Minnesota Wild",
+            "city": "Saint Paul",
+            "state": "Minnesota",
+            "metroArea": "Minneapolis-St. Paul"
+        },
+        {
+            "teamName": "Montreal Canadiens",
+            "city": "Montreal",
+            "state": "Quebec",
+            "metroArea": "Montreal"
+        },
+        {
+            "teamName": "Nashville Predators",
+            "city": "Nashville",
+            "state": "Tennessee",
+            "metroArea": "Nashville"
+        },
+        {
+            "teamName": "New Jersey Devils",
+            "city": "Newark",
+            "state": "New Jersey",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "New York Islanders",
+            "city": "Uniondale",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "New York Rangers",
+            "city": "New York",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "Ottawa Senators",
+            "city": "Ottawa",
+            "state": "Ontario",
+            "metroArea": "Ottawa"
+        },
+        {
+            "teamName": "Philadelphia Flyers",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "metroArea": "Philadelphia"
+        },
+        {
+            "teamName": "Pittsburgh Penguins",
+            "city": "Pittsburgh",
+            "state": "Pennsylvania",
+            "metroArea": "Pittsburgh"
+        },
+        {
+            "teamName": "San Jose Sharks",
+            "city": "San Jose",
+            "state": "California",
+            "metroArea": "San Jose"
+        },
+        {
+            "teamName": "Seattle Kraken",
+            "city": "Seattle",
+            "state": "Washington",
+            "metroArea": "Seattle"
+        },
+        {
+            "teamName": "St. Louis Blues",
+            "city": "St. Louis",
+            "state": "Missouri",
+            "metroArea": "St. Louis"
+        },
+        {
+            "teamName": "Tampa Bay Lightning",
+            "city": "Tampa",
+            "state": "Florida",
+            "metroArea": "Tampa Bay"
+        },
+        {
+            "teamName": "Toronto Maple Leafs",
+            "city": "Toronto",
+            "state": "Ontario",
+            "metroArea": "Toronto"
+        },
+        {
+            "teamName": "Vancouver Canucks",
+            "city": "Vancouver",
+            "state": "British Columbia",
+            "metroArea": "Vancouver"
+        },
+        {
+            "teamName": "Vegas Golden Knights",
+            "city": "Paradise",
+            "state": "Nevada",
+            "metroArea": "Las Vegas"
+        },
+        {
+            "teamName": "Washington Capitals",
+            "city": "Washington",
+            "state": "D.C.",
+            "metroArea": "Baltimore/Washington"
+        },
+        {
+            "teamName": "Winnipeg Jets",
+            "city": "Winnipeg",
+            "state": "Manitoba",
+            "metroArea": "Winnipeg"
+        }
+    ],
+    "MLB": [
+        {
+            "teamName": "Arizona Diamondbacks",
+            "city": "Phoenix",
+            "state": "Arizona",
+            "metroArea": "Phoenix"
+        },
+        {
+            "teamName": "Atlanta Braves",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "metroArea": "Atlanta"
+        },
+        {
+            "teamName": "Baltimore Orioles",
+            "city": "Baltimore",
+            "state": "Maryland",
+            "metroArea": "Baltimore/Washington"
+        },
+        {
+            "teamName": "Boston Red Sox",
+            "city": "Boston",
+            "state": "Massachusetts",
+            "metroArea": "Boston"
+        },
+        {
+            "teamName": "Chicago White Sox",
+            "city": "Chicago",
+            "state": "Illinois",
+            "metroArea": "Chicago"
+        },
+        {
+            "teamName": "Chicago Cubs",
+            "city": "Chicago",
+            "state": "Illinois",
+            "metroArea": "Chicago"
+        },
+        {
+            "teamName": "Cleveland Guardians",
+            "city": "Cleveland",
+            "state": "Ohio",
+            "metroArea": "Cleveland"
+        },
+        {
+            "teamName": "Colorado Rockies",
+            "city": "Denver",
+            "state": "Colorado",
+            "metroArea": "Denver"
+        },
+        {
+            "teamName": "Detroit Tigers",
+            "city": "Detroit",
+            "state": "Michigan",
+            "metroArea": "Detroit"
+        },
+        {
+            "teamName": "Houston Astros",
+            "city": "Houston",
+            "state": "Texas",
+            "metroArea": "Houston"
+        },
+        {
+            "teamName": "Kansas City Royals",
+            "city": "Kansas City",
+            "state": "Missouri",
+            "metroArea": "Kansas City"
+        },
+        {
+            "teamName": "Los Angeles Angels",
+            "city": "Los Angeles",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Los Angeles Dodgers",
+            "city": "Los Angeles",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Miami Marlins",
+            "city": "Miami",
+            "state": "Florida",
+            "metroArea": "Miami"
+        },
+        {
+            "teamName": "Milwaukee Brewers",
+            "city": "Milwaukee",
+            "state": "Wisconsin",
+            "metroArea": "Milwaukee"
+        },
+        {
+            "teamName": "Minnesota Twins",
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "metroArea": "Minneapolis-St. Paul"
+        },
+        {
+            "teamName": "New York Yankees",
+            "city": "New York",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "New York Mets",
+            "city": "New York",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "Oakland Athletics",
+            "city": "Oakland",
+            "state": "California",
+            "metroArea": "San Francisco Bay Area"
+        },
+        {
+            "teamName": "Philadelphia Phillies",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "metroArea": "Philadelphia"
+        },
+        {
+            "teamName": "Pittsburgh Pirates",
+            "city": "Pittsburgh",
+            "state": "Pennsylvania",
+            "metroArea": "Pittsburgh"
+        },
+        {
+            "teamName": "San Diego Padres",
+            "city": "San Diego",
+            "state": "California",
+            "metroArea": "San Diego"
+        },
+        {
+            "teamName": "San Francisco Giants",
+            "city": "San Francisco",
+            "state": "California",
+            "metroArea": "San Francisco Bay Area"
+        },
+        {
+            "teamName": "Seattle Mariners",
+            "city": "Seattle",
+            "state": "Washington",
+            "metroArea": "Seattle"
+        },
+        {
+            "teamName": "St. Louis Cardinals",
+            "city": "St. Louis",
+            "state": "Missouri",
+            "metroArea": "St. Louis"
+        },
+        {
+            "teamName": "Tampa Bay Rays",
+            "city": "St. Petersburg",
+            "state": "Florida",
+            "metroArea": "Tampa Bay"
+        },
+        {
+            "teamName": "Texas Rangers",
+            "city": "Arlington",
+            "state": "Texas",
+            "metroArea": "Dallas-Fort Worth"
+        },
+        {
+            "teamName": "Toronto Blue Jays",
+            "city": "Toronto",
+            "state": "Ontario",
+            "metroArea": "Toronto"
+        },
+        {
+            "teamName": "Washington Nationals",
+            "city": "Washington",
+            "state": "D.C.",
+            "metroArea": "Baltimore/Washington"
+        }
+    ],
+    "MLS": [
+        {
+            "teamName": "Atlanta United FC",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "metroArea": "Atlanta"
+        },
+        {
+            "teamName": "Austin FC",
+            "city": "Austin",
+            "state": "Texas",
+            "metroArea": "Austin"
+        },
+        {
+            "teamName": "Chicago Fire FC",
+            "city": "Chicago",
+            "state": "Illinois",
+            "metroArea": "Chicago"
+        },
+        {
+            "teamName": "Colorado Rapids",
+            "city": "Commerce City",
+            "state": "Colorado",
+            "metroArea": "Denver"
+        },
+        {
+            "teamName": "Columbus Crew",
+            "city": "Columbus",
+            "state": "Ohio",
+            "metroArea": "Columbus"
+        },
+        {
+            "teamName": "D.C. United",
+            "city": "Washington",
+            "state": "D.C.",
+            "metroArea": "Baltimore/Washington"
+        },
+        {
+            "teamName": "FC Cincinnati",
+            "city": "Cincinnati",
+            "state": "Ohio",
+            "metroArea": "Cincinnati"
+        },
+        {
+            "teamName": "FC Dallas",
+            "city": "Frisco",
+            "state": "Texas",
+            "metroArea": "Dallas-Fort Worth"
+        },
+        {
+            "teamName": "Houston Dynamo FC",
+            "city": "Houston",
+            "state": "Texas",
+            "metroArea": "Houston"
+        },
+        {
+            "teamName": "Inter Miami CF",
+            "city": "Fort Lauderdale",
+            "state": "Florida",
+            "metroArea": "Miami"
+        },
+        {
+            "teamName": "LA Galaxy",
+            "city": "Carson",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Los Angeles FC",
+            "city": "Los Angeles",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Minnesota United FC",
+            "city": "St. Paul",
+            "state": "Minnesota",
+            "metroArea": "Minneapolis-St. Paul"
+        },
+        {
+            "teamName": "Montreal Impact",
+            "city": "Montreal",
+            "state": "Quebec",
+            "metroArea": "Montreal"
+        },
+        {
+            "teamName": "Nashville SC",
+            "city": "Nashville",
+            "state": "Tennessee",
+            "metroArea": "Nashville"
+        },
+        {
+            "teamName": "New England Revolution",
+            "city": "Foxborough",
+            "state": "Massachusetts",
+            "metroArea": "Boston"
+        },
+        {
+            "teamName": "New York City FC",
+            "city": "New York",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "New York Red Bulls",
+            "city": "Harrison",
+            "state": "New Jersey",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "Orlando City SC",
+            "city": "Orlando",
+            "state": "Florida",
+            "metroArea": "Orlando"
+        },
+        {
+            "teamName": "Philadelphia Union",
+            "city": "Chester",
+            "state": "Pennsylvania",
+            "metroArea": "Philadelphia"
+        },
+        {
+            "teamName": "Portland Timbers",
+            "city": "Portland",
+            "state": "Oregon",
+            "metroArea": "Portland"
+        },
+        {
+            "teamName": "Real Salt Lake",
+            "city": "Sandy",
+            "state": "Utah",
+            "metroArea": "Salt Lake City"
+        },
+        {
+            "teamName": "San Jose Earthquakes",
+            "city": "San Jose",
+            "state": "California",
+            "metroArea": "San Jose"
+        },
+        {
+            "teamName": "Seattle Sounders FC",
+            "city": "Seattle",
+            "state": "Washington",
+            "metroArea": "Seattle"
+        },
+        {
+            "teamName": "Sporting Kansas City",
+            "city": "Kansas City",
+            "state": "Missouri",
+            "metroArea": "Kansas City"
+        },
+        {
+            "teamName": "Toronto FC",
+            "city": "Toronto",
+            "state": "Ontario",
+            "metroArea": "Toronto"
+        },
+        {
+            "teamName": "Vancouver Whitecaps FC",
+            "city": "Vancouver",
+            "state": "British Columbia",
+            "metroArea": "Vancouver"
+        }
+    ],
+    "NBA": [
+        {
+            "teamName": "Atlanta Hawks",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "metroArea": "Atlanta"
+        },
+        {
+            "teamName": "Boston Celtics",
+            "city": "Boston",
+            "state": "Massachusetts",
+            "metroArea": "Boston"
+        },
+        {
+            "teamName": "Brooklyn Nets",
+            "city": "Brooklyn",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "Charlotte Hornets",
+            "city": "Charlotte",
+            "state": "North Carolina",
+            "metroArea": "Charlotte"
+        },
+        {
+            "teamName": "Chicago Bulls",
+            "city": "Chicago",
+            "state": "Illinois",
+            "metroArea": "Chicago"
+        },
+        {
+            "teamName": "Cleveland Cavaliers",
+            "city": "Cleveland",
+            "state": "Ohio",
+            "metroArea": "Cleveland"
+        },
+        {
+            "teamName": "Dallas Mavericks",
+            "city": "Dallas",
+            "state": "Texas",
+            "metroArea": "Dallas-Fort Worth"
+        },
+        {
+            "teamName": "Denver Nuggets",
+            "city": "Denver",
+            "state": "Colorado",
+            "metroArea": "Denver"
+        },
+        {
+            "teamName": "Detroit Pistons",
+            "city": "Detroit",
+            "state": "Michigan",
+            "metroArea": "Detroit"
+        },
+        {
+            "teamName": "Golden State Warriors",
+            "city": "San Francisco",
+            "state": "California",
+            "metroArea": "San Francisco Bay Area"
+        },
+        {
+            "teamName": "Houston Rockets",
+            "city": "Houston",
+            "state": "Texas",
+            "metroArea": "Houston"
+        },
+        {
+            "teamName": "Indiana Pacers",
+            "city": "Indianapolis",
+            "state": "Indiana",
+            "metroArea": "Indianapolis"
+        },
+        {
+            "teamName": "LA Clippers",
+            "city": "Los Angeles",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Los Angeles Lakers",
+            "city": "Los Angeles",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Memphis Grizzlies",
+            "city": "Memphis",
+            "state": "Tennessee",
+            "metroArea": "Memphis"
+        },
+        {
+            "teamName": "Miami Heat",
+            "city": "Miami",
+            "state": "Florida",
+            "metroArea": "Miami"
+        },
+        {
+            "teamName": "Milwaukee Bucks",
+            "city": "Milwaukee",
+            "state": "Wisconsin",
+            "metroArea": "Milwaukee"
+        },
+        {
+            "teamName": "Minnesota Timberwolves",
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "metroArea": "Minneapolis-St. Paul"
+        },
+        {
+            "teamName": "New Orleans Pelicans",
+            "city": "New Orleans",
+            "state": "Louisiana",
+            "metroArea": "New Orleans"
+        },
+        {
+            "teamName": "New York Knicks",
+            "city": "New York",
+            "state": "New York",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "Oklahoma City Thunder",
+            "city": "Oklahoma City",
+            "state": "Oklahoma",
+            "metroArea": "Oklahoma City"
+        },
+        {
+            "teamName": "Orlando Magic",
+            "city": "Orlando",
+            "state": "Florida",
+            "metroArea": "Orlando"
+        },
+        {
+            "teamName": "Philadelphia 76ers",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "metroArea": "Philadelphia"
+        },
+        {
+            "teamName": "Phoenix Suns",
+            "city": "Phoenix",
+            "state": "Arizona",
+            "metroArea": "Phoenix"
+        },
+        {
+            "teamName": "Portland Trail Blazers",
+            "city": "Portland",
+            "state": "Oregon",
+            "metroArea": "Portland"
+        },
+        {
+            "teamName": "Sacramento Kings",
+            "city": "Sacramento",
+            "state": "California",
+            "metroArea": "Sacramento"
+        },
+        {
+            "teamName": "San Antonio Spurs",
+            "city": "San Antonio",
+            "state": "Texas",
+            "metroArea": "San Antonio"
+        },
+        {
+            "teamName": "Toronto Raptors",
+            "city": "Toronto",
+            "state": "Ontario",
+            "metroArea": "Toronto"
+        },
+        {
+            "teamName": "Utah Jazz",
+            "city": "Salt Lake City",
+            "state": "Utah",
+            "metroArea": "Salt Lake City"
+        },
+        {
+            "teamName": "Washington Wizards",
+            "city": "Washington",
+            "state": "D.C.",
+            "metroArea": "Baltimore/Washington"
+        }
+    ],
+    "NFL": [
+        {
+            "teamName": "Arizona Cardinals",
+            "city": "Glendale",
+            "state": "Arizona",
+            "metroArea": "Phoenix"
+        },
+        {
+            "teamName": "Atlanta Falcons",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "metroArea": "Atlanta"
+        },
+        {
+            "teamName": "Baltimore Ravens",
+            "city": "Baltimore",
+            "state": "Maryland",
+            "metroArea": "Baltimore/Washington"
+        },
+        {
+            "teamName": "Buffalo Bills",
+            "city": "Orchard Park",
+            "state": "New York",
+            "metroArea": "Buffalo"
+        },
+        {
+            "teamName": "Carolina Panthers",
+            "city": "Charlotte",
+            "state": "North Carolina",
+            "metroArea": "Charlotte"
+        },
+        {
+            "teamName": "Chicago Bears",
+            "city": "Chicago",
+            "state": "Illinois",
+            "metroArea": "Chicago"
+        },
+        {
+            "teamName": "Cincinnati Bengals",
+            "city": "Cincinnati",
+            "state": "Ohio",
+            "metroArea": "Cincinnati"
+        },
+        {
+            "teamName": "Cleveland Browns",
+            "city": "Cleveland",
+            "state": "Ohio",
+            "metroArea": "Cleveland"
+        },
+        {
+            "teamName": "Dallas Cowboys",
+            "city": "Arlington",
+            "state": "Texas",
+            "metroArea": "Dallas-Fort Worth"
+        },
+        {
+            "teamName": "Denver Broncos",
+            "city": "Denver",
+            "state": "Colorado",
+            "metroArea": "Denver"
+        },
+        {
+            "teamName": "Detroit Lions",
+            "city": "Detroit",
+            "state": "Michigan",
+            "metroArea": "Detroit"
+        },
+        {
+            "teamName": "Green Bay Packers",
+            "city": "Green Bay",
+            "state": "Wisconsin",
+            "metroArea": "Green Bay"
+        },
+        {
+            "teamName": "Houston Texans",
+            "city": "Houston",
+            "state": "Texas",
+            "metroArea": "Houston"
+        },
+        {
+            "teamName": "Indianapolis Colts",
+            "city": "Indianapolis",
+            "state": "Indiana",
+            "metroArea": "Indianapolis"
+        },
+        {
+            "teamName": "Jacksonville Jaguars",
+            "city": "Jacksonville",
+            "state": "Florida",
+            "metroArea": "Jacksonville"
+        },
+        {
+            "teamName": "Kansas City Chiefs",
+            "city": "Kansas City",
+            "state": "Missouri",
+            "metroArea": "Kansas City"
+        },
+        {
+            "teamName": "Las Vegas Raiders",
+            "city": "Paradise",
+            "state": "Nevada",
+            "metroArea": "Las Vegas"
+        },
+        {
+            "teamName": "Los Angeles Chargers",
+            "city": "Inglewood",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Los Angeles Rams",
+            "city": "Inglewood",
+            "state": "California",
+            "metroArea": "Los Angeles"
+        },
+        {
+            "teamName": "Miami Dolphins",
+            "city": "Miami Gardens",
+            "state": "Florida",
+            "metroArea": "Miami"
+        },
+        {
+            "teamName": "Minnesota Vikings",
+            "city": "Minneapolis",
+            "state": "Minnesota",
+            "metroArea": "Minneapolis-St. Paul"
+        },
+        {
+            "teamName": "New England Patriots",
+            "city": "Foxborough",
+            "state": "Massachusetts",
+            "metroArea": "Boston"
+        },
+        {
+            "teamName": "New Orleans Saints",
+            "city": "New Orleans",
+            "state": "Louisiana",
+            "metroArea": "New Orleans"
+        },
+        {
+            "teamName": "New York Giants",
+            "city": "East Rutherford",
+            "state": "New Jersey",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "New York Jets",
+            "city": "East Rutherford",
+            "state": "New Jersey",
+            "metroArea": "New York City"
+        },
+        {
+            "teamName": "Philadelphia Eagles",
+            "city": "Philadelphia",
+            "state": "Pennsylvania",
+            "metroArea": "Philadelphia"
+        },
+        {
+            "teamName": "Pittsburgh Steelers",
+            "city": "Pittsburgh",
+            "state": "Pennsylvania",
+            "metroArea": "Pittsburgh"
+        },
+        {
+            "teamName": "San Francisco 49ers",
+            "city": "Santa Clara",
+            "state": "California",
+            "metroArea": "San Francisco Bay Area"
+        },
+        {
+            "teamName": "Seattle Seahawks",
+            "city": "Seattle",
+            "state": "Washington",
+            "metroArea": "Seattle"
+        },
+        {
+            "teamName": "Tampa Bay Buccaneers",
+            "city": "Tampa",
+            "state": "Florida",
+            "metroArea": "Tampa Bay"
+        },
+        {
+            "teamName": "Tennessee Titans",
+            "city": "Nashville",
+            "state": "Tennessee",
+            "metroArea": "Nashville"
+        },
+        {
+            "teamName": "Washington Commanders",
+            "city": "Landover",
+            "state": "Maryland",
+            "metroArea": "Baltimore/Washington"
+        }
+    ]
+}

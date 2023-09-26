@@ -1,0 +1,1994 @@
+[
+    {
+        "id": 29,
+        "metroArea": "Atlanta",
+        "teams": [
+            {
+                "teamName": "Atlanta Braves",
+                "city": "Atlanta",
+                "state": "Georgia",
+                "metroArea": "Atlanta",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/atl.png",
+                "color": "0c2340",
+                "alternateColor": "ba0c2f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Atlanta United FC",
+                "city": "Atlanta",
+                "state": "Georgia",
+                "metroArea": "Atlanta",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Atlanta Hawks",
+                "city": "Atlanta",
+                "state": "Georgia",
+                "metroArea": "Atlanta",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/atl.png",
+                "color": "c8102e",
+                "alternateColor": "fdb927",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Atlanta Falcons",
+                "city": "Atlanta",
+                "state": "Georgia",
+                "metroArea": "Atlanta",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
+                "color": "a71930",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/1?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "metroArea": "Austin",
+        "teams": [
+            {
+                "teamName": "Austin FC",
+                "city": "Austin",
+                "state": "Texas",
+                "metroArea": "Austin",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "metroArea": "Baltimore/Washington",
+        "teams": [
+            {
+                "teamName": "Washington Capitals",
+                "city": "Washington",
+                "state": "D.C.",
+                "metroArea": "Baltimore/Washington",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/wsh.png",
+                "color": "d71830",
+                "alternateColor": "0b1f41",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Baltimore Orioles",
+                "city": "Baltimore",
+                "state": "Maryland",
+                "metroArea": "Baltimore/Washington",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/bal.png",
+                "color": "df4601",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Washington Nationals",
+                "city": "Washington",
+                "state": "D.C.",
+                "metroArea": "Baltimore/Washington",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/wsh.png",
+                "color": "ab0003",
+                "alternateColor": "11225b",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "D.C. United",
+                "city": "Washington",
+                "state": "D.C.",
+                "metroArea": "Baltimore/Washington",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Washington Wizards",
+                "city": "Washington",
+                "state": "D.C.",
+                "metroArea": "Baltimore/Washington",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
+                "color": "e31837",
+                "alternateColor": "002b5c",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Baltimore Ravens",
+                "city": "Baltimore",
+                "state": "Maryland",
+                "metroArea": "Baltimore/Washington",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+                "color": "24135f",
+                "alternateColor": "9a7611",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/33?lang=en&region=us"
+            },
+            {
+                "teamName": "Washington Commanders",
+                "city": "Landover",
+                "state": "Maryland",
+                "metroArea": "Baltimore/Washington",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+                "color": "5a1414",
+                "alternateColor": "ffb612",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/28?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "metroArea": "Boston",
+        "teams": [
+            {
+                "teamName": "Boston Bruins",
+                "city": "Boston",
+                "state": "Massachusetts",
+                "metroArea": "Boston",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/bos.png",
+                "color": "000000",
+                "alternateColor": "fdbb30",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Boston Red Sox",
+                "city": "Boston",
+                "state": "Massachusetts",
+                "metroArea": "Boston",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/bos.png",
+                "color": "0d2b56",
+                "alternateColor": "bd3039",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New England Revolution",
+                "city": "Foxborough",
+                "state": "Massachusetts",
+                "metroArea": "Boston",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Boston Celtics",
+                "city": "Boston",
+                "state": "Massachusetts",
+                "metroArea": "Boston",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+                "color": "008348",
+                "alternateColor": "bb9753",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New England Patriots",
+                "city": "Foxborough",
+                "state": "Massachusetts",
+                "metroArea": "Boston",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+                "color": "002a5c",
+                "alternateColor": "c60c30",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/17?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "metroArea": "Buffalo",
+        "teams": [
+            {
+                "teamName": "Buffalo Sabres",
+                "city": "Buffalo",
+                "state": "New York",
+                "metroArea": "Buffalo",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/buf.png",
+                "color": "00468b",
+                "alternateColor": "fdb71a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Buffalo Bills",
+                "city": "Orchard Park",
+                "state": "New York",
+                "metroArea": "Buffalo",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+                "color": "00338d",
+                "alternateColor": "d50a0a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/2?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "metroArea": "Calgary",
+        "teams": [
+            {
+                "teamName": "Calgary Flames",
+                "city": "Calgary",
+                "state": "Alberta",
+                "metroArea": "Calgary",
+                "league": "NHL",
+                "timeZone": "America/Edmonton",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/cgy.png",
+                "color": "dd1a32",
+                "alternateColor": "fdbe57",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "metroArea": "Charlotte",
+        "teams": [
+            {
+                "teamName": "Charlotte Hornets",
+                "city": "Charlotte",
+                "state": "North Carolina",
+                "metroArea": "Charlotte",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/cha.png",
+                "color": "008ca8",
+                "alternateColor": "1d1060",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Carolina Panthers",
+                "city": "Charlotte",
+                "state": "North Carolina",
+                "metroArea": "Charlotte",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
+                "color": "0085ca",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/29?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "metroArea": "Chicago",
+        "teams": [
+            {
+                "teamName": "Chicago Blackhawks",
+                "city": "Chicago",
+                "state": "Illinois",
+                "metroArea": "Chicago",
+                "league": "NHL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/chi.png",
+                "color": "e31937",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Chicago White Sox",
+                "city": "Chicago",
+                "state": "Illinois",
+                "metroArea": "Chicago",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/chw.png",
+                "color": "000000",
+                "alternateColor": "c4ced4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Chicago Cubs",
+                "city": "Chicago",
+                "state": "Illinois",
+                "metroArea": "Chicago",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/chc.png",
+                "color": "0e3386",
+                "alternateColor": "cc3433",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Chicago Fire FC",
+                "city": "Chicago",
+                "state": "Illinois",
+                "metroArea": "Chicago",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            },
+            {
+                "teamName": "Chicago Bulls",
+                "city": "Chicago",
+                "state": "Illinois",
+                "metroArea": "Chicago",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
+                "color": "ce1141",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Chicago Bears",
+                "city": "Chicago",
+                "state": "Illinois",
+                "metroArea": "Chicago",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+                "color": "0b1c3a",
+                "alternateColor": "e64100",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/3?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "metroArea": "Cincinnati",
+        "teams": [
+            {
+                "teamName": "FC Cincinnati",
+                "city": "Cincinnati",
+                "state": "Ohio",
+                "metroArea": "Cincinnati",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Cincinnati Bengals",
+                "city": "Cincinnati",
+                "state": "Ohio",
+                "metroArea": "Cincinnati",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+                "color": "fb4f14",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/4?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "metroArea": "Cleveland",
+        "teams": [
+            {
+                "teamName": "Cleveland Guardians",
+                "city": "Cleveland",
+                "state": "Ohio",
+                "metroArea": "Cleveland",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/cle.png",
+                "color": "002b5c",
+                "alternateColor": "e31937",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Cleveland Cavaliers",
+                "city": "Cleveland",
+                "state": "Ohio",
+                "metroArea": "Cleveland",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/cle.png",
+                "color": "860038",
+                "alternateColor": "bc945c",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Cleveland Browns",
+                "city": "Cleveland",
+                "state": "Ohio",
+                "metroArea": "Cleveland",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
+                "color": "472a08",
+                "alternateColor": "ff3c00",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/5?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "metroArea": "Columbus",
+        "teams": [
+            {
+                "teamName": "Columbus Blue Jackets",
+                "city": "Columbus",
+                "state": "Ohio",
+                "metroArea": "Columbus",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/cbj.png",
+                "color": "002d62",
+                "alternateColor": "e31937",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Columbus Crew",
+                "city": "Columbus",
+                "state": "Ohio",
+                "metroArea": "Columbus",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "metroArea": "Dallas-Fort Worth",
+        "teams": [
+            {
+                "teamName": "Dallas Stars",
+                "city": "Dallas",
+                "state": "Texas",
+                "metroArea": "Dallas-Fort Worth",
+                "league": "NHL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/dal.png",
+                "color": "20864c",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Texas Rangers",
+                "city": "Arlington",
+                "state": "Texas",
+                "metroArea": "Dallas-Fort Worth",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tex.png",
+                "color": "003278",
+                "alternateColor": "c0111f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "FC Dallas",
+                "city": "Frisco",
+                "state": "Texas",
+                "metroArea": "Dallas-Fort Worth",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            },
+            {
+                "teamName": "Dallas Mavericks",
+                "city": "Dallas",
+                "state": "Texas",
+                "metroArea": "Dallas-Fort Worth",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/dal.png",
+                "color": "0064b1",
+                "alternateColor": "bbc4ca",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Dallas Cowboys",
+                "city": "Arlington",
+                "state": "Texas",
+                "metroArea": "Dallas-Fort Worth",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+                "color": "002a5c",
+                "alternateColor": "b0b7bc",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/6?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "metroArea": "Denver",
+        "teams": [
+            {
+                "teamName": "Colorado Avalanche",
+                "city": "Denver",
+                "state": "Colorado",
+                "metroArea": "Denver",
+                "league": "NHL",
+                "timeZone": "America/Denver",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/col.png",
+                "color": "860038",
+                "alternateColor": "005695",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Colorado Rockies",
+                "city": "Denver",
+                "state": "Colorado",
+                "metroArea": "Denver",
+                "league": "MLB",
+                "timeZone": "America/Denver",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/col.png",
+                "color": "33006f",
+                "alternateColor": "c4ced4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Colorado Rapids",
+                "city": "Commerce City",
+                "state": "Colorado",
+                "metroArea": "Denver",
+                "league": "MLS",
+                "timeZone": "America/Denver"
+            },
+            {
+                "teamName": "Denver Nuggets",
+                "city": "Denver",
+                "state": "Colorado",
+                "metroArea": "Denver",
+                "league": "NBA",
+                "timeZone": "America/Denver",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/den.png",
+                "color": "0e2240",
+                "alternateColor": "fec524",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Denver Broncos",
+                "city": "Denver",
+                "state": "Colorado",
+                "metroArea": "Denver",
+                "league": "NFL",
+                "timeZone": "America/Denver",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+                "color": "0a2343",
+                "alternateColor": "fc4c02",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/7?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "metroArea": "Detroit",
+        "teams": [
+            {
+                "teamName": "Detroit Red Wings",
+                "city": "Detroit",
+                "state": "Michigan",
+                "metroArea": "Detroit",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/det.png",
+                "color": "e30526",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Detroit Tigers",
+                "city": "Detroit",
+                "state": "Michigan",
+                "metroArea": "Detroit",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/det.png",
+                "color": "002d5c",
+                "alternateColor": "ff6600",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Detroit Pistons",
+                "city": "Detroit",
+                "state": "Michigan",
+                "metroArea": "Detroit",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/det.png",
+                "color": "1d428a",
+                "alternateColor": "c8102e",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Detroit Lions",
+                "city": "Detroit",
+                "state": "Michigan",
+                "metroArea": "Detroit",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+                "color": "0076b6",
+                "alternateColor": "bbbbbb",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/8?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "metroArea": "Edmonton",
+        "teams": [
+            {
+                "teamName": "Edmonton Oilers",
+                "city": "Edmonton",
+                "state": "Alberta",
+                "metroArea": "Edmonton",
+                "league": "NHL",
+                "timeZone": "America/Edmonton",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/edm.png",
+                "color": "00205b",
+                "alternateColor": "ff4c00",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "metroArea": "Green Bay",
+        "teams": [
+            {
+                "teamName": "Green Bay Packers",
+                "city": "Green Bay",
+                "state": "Wisconsin",
+                "metroArea": "Green Bay",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+                "color": "204e32",
+                "alternateColor": "ffb612",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/9?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "metroArea": "Houston",
+        "teams": [
+            {
+                "teamName": "Houston Astros",
+                "city": "Houston",
+                "state": "Texas",
+                "metroArea": "Houston",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/hou.png",
+                "color": "002d62",
+                "alternateColor": "eb6e1f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Houston Dynamo FC",
+                "city": "Houston",
+                "state": "Texas",
+                "metroArea": "Houston",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            },
+            {
+                "teamName": "Houston Rockets",
+                "city": "Houston",
+                "state": "Texas",
+                "metroArea": "Houston",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/hou.png",
+                "color": "ce1141",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Houston Texans",
+                "city": "Houston",
+                "state": "Texas",
+                "metroArea": "Houston",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+                "color": "00143f",
+                "alternateColor": "c41230",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "metroArea": "Indianapolis",
+        "teams": [
+            {
+                "teamName": "Indiana Pacers",
+                "city": "Indianapolis",
+                "state": "Indiana",
+                "metroArea": "Indianapolis",
+                "league": "NBA",
+                "timeZone": "America/Indiana/Indianapolis",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/ind.png",
+                "color": "002d62",
+                "alternateColor": "fdbb30",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Indianapolis Colts",
+                "city": "Indianapolis",
+                "state": "Indiana",
+                "metroArea": "Indianapolis",
+                "league": "NFL",
+                "timeZone": "America/Indiana/Indianapolis",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
+                "color": "003b75",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/11?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "metroArea": "Jacksonville",
+        "teams": [
+            {
+                "teamName": "Jacksonville Jaguars",
+                "city": "Jacksonville",
+                "state": "Florida",
+                "metroArea": "Jacksonville",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+                "color": "007487",
+                "alternateColor": "d7a22a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/30?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "metroArea": "Kansas City",
+        "teams": [
+            {
+                "teamName": "Kansas City Royals",
+                "city": "Kansas City",
+                "state": "Missouri",
+                "metroArea": "Kansas City",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/kc.png",
+                "color": "004687",
+                "alternateColor": "7ab2dd",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Sporting Kansas City",
+                "city": "Kansas City",
+                "state": "Missouri",
+                "metroArea": "Kansas City",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            },
+            {
+                "teamName": "Kansas City Chiefs",
+                "city": "Kansas City",
+                "state": "Missouri",
+                "metroArea": "Kansas City",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+                "color": "e31837",
+                "alternateColor": "ffb612",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/12?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "metroArea": "Las Vegas",
+        "teams": [
+            {
+                "teamName": "Vegas Golden Knights",
+                "city": "Paradise",
+                "state": "Nevada",
+                "metroArea": "Las Vegas",
+                "league": "NHL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/vgk.png",
+                "color": "344043",
+                "alternateColor": "b4975a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Las Vegas Raiders",
+                "city": "Paradise",
+                "state": "Nevada",
+                "metroArea": "Las Vegas",
+                "league": "NFL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+                "color": "000000",
+                "alternateColor": "a5acaf",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/13?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "metroArea": "Los Angeles",
+        "teams": [
+            {
+                "teamName": "Anaheim Ducks",
+                "city": "Anaheim",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "NHL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/ana.png",
+                "color": "000000",
+                "alternateColor": "f26924",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Los Angeles Kings",
+                "city": "Los Angeles",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "NHL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/la.png",
+                "color": "000000",
+                "alternateColor": "b0b7bc",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Los Angeles Angels",
+                "city": "Los Angeles",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "MLB",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/laa.png",
+                "color": "ba0021",
+                "alternateColor": "c4ced4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Los Angeles Dodgers",
+                "city": "Los Angeles",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "MLB",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/lad.png",
+                "color": "005a9c",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "LA Galaxy",
+                "city": "Carson",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "MLS",
+                "timeZone": "America/Los_Angeles"
+            },
+            {
+                "teamName": "Los Angeles FC",
+                "city": "Los Angeles",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "MLS",
+                "timeZone": "America/Los_Angeles"
+            },
+            {
+                "teamName": "LA Clippers",
+                "city": "Los Angeles",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "NBA",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+                "color": "1d428a",
+                "alternateColor": "c8102e",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Los Angeles Lakers",
+                "city": "Los Angeles",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "NBA",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
+                "color": "552583",
+                "alternateColor": "fdb927",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Los Angeles Chargers",
+                "city": "Inglewood",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "NFL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+                "color": "0080c6",
+                "alternateColor": "ffc20e",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/24?lang=en&region=us"
+            },
+            {
+                "teamName": "Los Angeles Rams",
+                "city": "Inglewood",
+                "state": "California",
+                "metroArea": "Los Angeles",
+                "league": "NFL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+                "color": "003594",
+                "alternateColor": "ffd100",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/14?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "metroArea": "Memphis",
+        "teams": [
+            {
+                "teamName": "Memphis Grizzlies",
+                "city": "Memphis",
+                "state": "Tennessee",
+                "metroArea": "Memphis",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
+                "color": "5d76a9",
+                "alternateColor": "12173f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "metroArea": "Miami",
+        "teams": [
+            {
+                "teamName": "Florida Panthers",
+                "city": "Sunrise",
+                "state": "Florida",
+                "metroArea": "Miami",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/fla.png",
+                "color": "e51937",
+                "alternateColor": "002d62",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Miami Marlins",
+                "city": "Miami",
+                "state": "Florida",
+                "metroArea": "Miami",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/mia.png",
+                "color": "00a3e0",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Inter Miami CF",
+                "city": "Fort Lauderdale",
+                "state": "Florida",
+                "metroArea": "Miami",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Miami Heat",
+                "city": "Miami",
+                "state": "Florida",
+                "metroArea": "Miami",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/mia.png",
+                "color": "98002e",
+                "alternateColor": "f9a01b",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Miami Dolphins",
+                "city": "Miami Gardens",
+                "state": "Florida",
+                "metroArea": "Miami",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+                "color": "008e97",
+                "alternateColor": "fc4c02",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/15?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "metroArea": "Milwaukee",
+        "teams": [
+            {
+                "teamName": "Milwaukee Brewers",
+                "city": "Milwaukee",
+                "state": "Wisconsin",
+                "metroArea": "Milwaukee",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/mil.png",
+                "color": "13294b",
+                "alternateColor": "ffc72c",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Milwaukee Bucks",
+                "city": "Milwaukee",
+                "state": "Wisconsin",
+                "metroArea": "Milwaukee",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/mil.png",
+                "color": "00471b",
+                "alternateColor": "eee1c6",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "metroArea": "Minneapolis-St. Paul",
+        "teams": [
+            {
+                "teamName": "Minnesota Wild",
+                "city": "Saint Paul",
+                "state": "Minnesota",
+                "metroArea": "Minneapolis-St. Paul",
+                "league": "NHL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/min.png",
+                "color": "124734",
+                "alternateColor": "ae122a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Minnesota Twins",
+                "city": "Minneapolis",
+                "state": "Minnesota",
+                "metroArea": "Minneapolis-St. Paul",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/min.png",
+                "color": "031f40",
+                "alternateColor": "e20e32",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Minnesota United FC",
+                "city": "St. Paul",
+                "state": "Minnesota",
+                "metroArea": "Minneapolis-St. Paul",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            },
+            {
+                "teamName": "Minnesota Timberwolves",
+                "city": "Minneapolis",
+                "state": "Minnesota",
+                "metroArea": "Minneapolis-St. Paul",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/min.png",
+                "color": "266092",
+                "alternateColor": "79bc43",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Minnesota Vikings",
+                "city": "Minneapolis",
+                "state": "Minnesota",
+                "metroArea": "Minneapolis-St. Paul",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+                "color": "4f2683",
+                "alternateColor": "ffc62f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/16?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "metroArea": "Montreal",
+        "teams": [
+            {
+                "teamName": "Montreal Canadiens",
+                "city": "Montreal",
+                "state": "Quebec",
+                "metroArea": "Montreal",
+                "league": "NHL",
+                "timeZone": "America/Toronto",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/mtl.png",
+                "color": "c41230",
+                "alternateColor": "013a81",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Montreal Impact",
+                "city": "Montreal",
+                "state": "Quebec",
+                "metroArea": "Montreal",
+                "league": "MLS",
+                "timeZone": "America/Toronto"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "metroArea": "Nashville",
+        "teams": [
+            {
+                "teamName": "Nashville Predators",
+                "city": "Nashville",
+                "state": "Tennessee",
+                "metroArea": "Nashville",
+                "league": "NHL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nsh.png",
+                "color": "fdba31",
+                "alternateColor": "002d62",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Nashville SC",
+                "city": "Nashville",
+                "state": "Tennessee",
+                "metroArea": "Nashville",
+                "league": "MLS",
+                "timeZone": "America/Chicago"
+            },
+            {
+                "teamName": "Tennessee Titans",
+                "city": "Nashville",
+                "state": "Tennessee",
+                "metroArea": "Nashville",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+                "color": "4b92db",
+                "alternateColor": "002a5c",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/10?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "metroArea": "New Orleans",
+        "teams": [
+            {
+                "teamName": "New Orleans Pelicans",
+                "city": "New Orleans",
+                "state": "Louisiana",
+                "metroArea": "New Orleans",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+                "color": "0a2240",
+                "alternateColor": "b4975a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New Orleans Saints",
+                "city": "New Orleans",
+                "state": "Louisiana",
+                "metroArea": "New Orleans",
+                "league": "NFL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
+                "color": "d3bc8d",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/18?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "metroArea": "New York City",
+        "teams": [
+            {
+                "teamName": "New Jersey Devils",
+                "city": "Newark",
+                "state": "New Jersey",
+                "metroArea": "New York City",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nj.png",
+                "color": "e30b2b",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Islanders",
+                "city": "Uniondale",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/nyi.png",
+                "color": "00529b",
+                "alternateColor": "f47d31",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Rangers",
+                "city": "New York",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/nyr.png",
+                "color": "0056ae",
+                "alternateColor": "e51937",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Yankees",
+                "city": "New York",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nyy.png",
+                "color": "132448",
+                "alternateColor": "c4ced4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Mets",
+                "city": "New York",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/nym.png",
+                "color": "002d72",
+                "alternateColor": "ff5910",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York City FC",
+                "city": "New York",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "New York Red Bulls",
+                "city": "Harrison",
+                "state": "New Jersey",
+                "metroArea": "New York City",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Brooklyn Nets",
+                "city": "Brooklyn",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
+                "color": "000000",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Knicks",
+                "city": "New York",
+                "state": "New York",
+                "metroArea": "New York City",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+                "color": "1d428a",
+                "alternateColor": "f58426",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Giants",
+                "city": "East Rutherford",
+                "state": "New Jersey",
+                "metroArea": "New York City",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+                "color": "003c7f",
+                "alternateColor": "c9243f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/19?lang=en&region=us"
+            },
+            {
+                "teamName": "New York Jets",
+                "city": "East Rutherford",
+                "state": "New Jersey",
+                "metroArea": "New York City",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+                "color": "115740",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/20?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "metroArea": "Oklahoma City",
+        "teams": [
+            {
+                "teamName": "Oklahoma City Thunder",
+                "city": "Oklahoma City",
+                "state": "Oklahoma",
+                "metroArea": "Oklahoma City",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/okc.png",
+                "color": "007ac1",
+                "alternateColor": "ef3b24",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "metroArea": "Orlando",
+        "teams": [
+            {
+                "teamName": "Orlando City SC",
+                "city": "Orlando",
+                "state": "Florida",
+                "metroArea": "Orlando",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Orlando Magic",
+                "city": "Orlando",
+                "state": "Florida",
+                "metroArea": "Orlando",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/orl.png",
+                "color": "0077c0",
+                "alternateColor": "c4ced4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "metroArea": "Ottawa",
+        "teams": [
+            {
+                "teamName": "Ottawa Senators",
+                "city": "Ottawa",
+                "state": "Ontario",
+                "metroArea": "Ottawa",
+                "league": "NHL",
+                "timeZone": "America/Toronto",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/ott.png",
+                "color": "dd1a32",
+                "alternateColor": "b79257",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "metroArea": "Philadelphia",
+        "teams": [
+            {
+                "teamName": "Philadelphia Flyers",
+                "city": "Philadelphia",
+                "state": "Pennsylvania",
+                "metroArea": "Philadelphia",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/phi.png",
+                "color": "fe5823",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Philadelphia Phillies",
+                "city": "Philadelphia",
+                "state": "Pennsylvania",
+                "metroArea": "Philadelphia",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/phi.png",
+                "color": "e81828",
+                "alternateColor": "003278",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Philadelphia Union",
+                "city": "Chester",
+                "state": "Pennsylvania",
+                "metroArea": "Philadelphia",
+                "league": "MLS",
+                "timeZone": "America/New_York"
+            },
+            {
+                "teamName": "Philadelphia 76ers",
+                "city": "Philadelphia",
+                "state": "Pennsylvania",
+                "metroArea": "Philadelphia",
+                "league": "NBA",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/scoreboard/phi.png",
+                "color": "1d428a",
+                "alternateColor": "e01234",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Philadelphia Eagles",
+                "city": "Philadelphia",
+                "state": "Pennsylvania",
+                "metroArea": "Philadelphia",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+                "color": "06424d",
+                "alternateColor": "a2aaad",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/21?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "metroArea": "Phoenix",
+        "teams": [
+            {
+                "teamName": "Arizona Coyotes",
+                "city": "Glendale",
+                "state": "Arizona",
+                "metroArea": "Phoenix",
+                "league": "NHL",
+                "timeZone": "America/Phoenix",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/ari.png",
+                "color": "790023",
+                "alternateColor": "b95915",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Arizona Diamondbacks",
+                "city": "Phoenix",
+                "state": "Arizona",
+                "metroArea": "Phoenix",
+                "league": "MLB",
+                "timeZone": "America/Phoenix",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/ari.png",
+                "color": "aa182c",
+                "alternateColor": "dac89e",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Phoenix Suns",
+                "city": "Phoenix",
+                "state": "Arizona",
+                "metroArea": "Phoenix",
+                "league": "NBA",
+                "timeZone": "America/Phoenix",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+                "color": "29127a",
+                "alternateColor": "e56020",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Arizona Cardinals",
+                "city": "Glendale",
+                "state": "Arizona",
+                "metroArea": "Phoenix",
+                "league": "NFL",
+                "timeZone": "America/Phoenix",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+                "color": "a4113e",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/22?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "metroArea": "Pittsburgh",
+        "teams": [
+            {
+                "teamName": "Pittsburgh Penguins",
+                "city": "Pittsburgh",
+                "state": "Pennsylvania",
+                "metroArea": "Pittsburgh",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/pit.png",
+                "color": "000000",
+                "alternateColor": "fdb71a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Pittsburgh Pirates",
+                "city": "Pittsburgh",
+                "state": "Pennsylvania",
+                "metroArea": "Pittsburgh",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/pit.png",
+                "color": "000000",
+                "alternateColor": "fdb827",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Pittsburgh Steelers",
+                "city": "Pittsburgh",
+                "state": "Pennsylvania",
+                "metroArea": "Pittsburgh",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+                "color": "000000",
+                "alternateColor": "ffb612",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/23?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "metroArea": "Portland",
+        "teams": [
+            {
+                "teamName": "Portland Timbers",
+                "city": "Portland",
+                "state": "Oregon",
+                "metroArea": "Portland",
+                "league": "MLS",
+                "timeZone": "America/Los_Angeles"
+            },
+            {
+                "teamName": "Portland Trail Blazers",
+                "city": "Portland",
+                "state": "Oregon",
+                "metroArea": "Portland",
+                "league": "NBA",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/por.png",
+                "color": "e03a3e",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "metroArea": "Raleigh",
+        "teams": [
+            {
+                "teamName": "Carolina Hurricanes",
+                "city": "Raleigh",
+                "state": "North Carolina",
+                "metroArea": "Raleigh",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/car.png",
+                "color": "e30426",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "metroArea": "Sacramento",
+        "teams": [
+            {
+                "teamName": "Sacramento Kings",
+                "city": "Sacramento",
+                "state": "California",
+                "metroArea": "Sacramento",
+                "league": "NBA",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
+                "color": "5a2d81",
+                "alternateColor": "6a7a82",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "metroArea": "Salt Lake City",
+        "teams": [
+            {
+                "teamName": "Real Salt Lake",
+                "city": "Sandy",
+                "state": "Utah",
+                "metroArea": "Salt Lake City",
+                "league": "MLS",
+                "timeZone": "America/Denver"
+            },
+            {
+                "teamName": "Utah Jazz",
+                "city": "Salt Lake City",
+                "state": "Utah",
+                "metroArea": "Salt Lake City",
+                "league": "NBA",
+                "timeZone": "America/Denver",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
+                "color": "000000",
+                "alternateColor": "fff21f",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "metroArea": "San Antonio",
+        "teams": [
+            {
+                "teamName": "San Antonio Spurs",
+                "city": "San Antonio",
+                "state": "Texas",
+                "metroArea": "San Antonio",
+                "league": "NBA",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+                "color": "000000",
+                "alternateColor": "c4ced4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "metroArea": "San Diego",
+        "teams": [
+            {
+                "teamName": "San Diego Padres",
+                "city": "San Diego",
+                "state": "California",
+                "metroArea": "San Diego",
+                "league": "MLB",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/sd.png",
+                "color": "3e2312",
+                "alternateColor": "ffc425",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "metroArea": "San Francisco Bay Area",
+        "teams": [
+            {
+                "teamName": "Oakland Athletics",
+                "city": "Oakland",
+                "state": "California",
+                "metroArea": "San Francisco Bay Area",
+                "league": "MLB",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/scoreboard/oak.png",
+                "color": "006241",
+                "alternateColor": "efb21e",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "San Francisco Giants",
+                "city": "San Francisco",
+                "state": "California",
+                "metroArea": "San Francisco Bay Area",
+                "league": "MLB",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/sf.png",
+                "color": "000000",
+                "alternateColor": "fd5a1e",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Golden State Warriors",
+                "city": "San Francisco",
+                "state": "California",
+                "metroArea": "San Francisco Bay Area",
+                "league": "NBA",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/gs.png",
+                "color": "fdb927",
+                "alternateColor": "1d428a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "San Francisco 49ers",
+                "city": "Santa Clara",
+                "state": "California",
+                "metroArea": "San Francisco Bay Area",
+                "league": "NFL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+                "color": "aa0000",
+                "alternateColor": "b3995d",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/25?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "metroArea": "San Jose",
+        "teams": [
+            {
+                "teamName": "San Jose Sharks",
+                "city": "San Jose",
+                "state": "California",
+                "metroArea": "San Jose",
+                "league": "NHL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sj.png",
+                "color": "00788a",
+                "alternateColor": "070707",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "San Jose Earthquakes",
+                "city": "San Jose",
+                "state": "California",
+                "metroArea": "San Jose",
+                "league": "MLS",
+                "timeZone": "America/Los_Angeles"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "metroArea": "Seattle",
+        "teams": [
+            {
+                "teamName": "Seattle Kraken",
+                "city": "Seattle",
+                "state": "Washington",
+                "metroArea": "Seattle",
+                "league": "NHL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/sea.png",
+                "color": "000d33",
+                "alternateColor": "a3dce4",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Seattle Mariners",
+                "city": "Seattle",
+                "state": "Washington",
+                "metroArea": "Seattle",
+                "league": "MLB",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/sea.png",
+                "color": "005c5c",
+                "alternateColor": "0c2c56",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Seattle Sounders FC",
+                "city": "Seattle",
+                "state": "Washington",
+                "metroArea": "Seattle",
+                "league": "MLS",
+                "timeZone": "America/Los_Angeles"
+            },
+            {
+                "teamName": "Seattle Seahawks",
+                "city": "Seattle",
+                "state": "Washington",
+                "metroArea": "Seattle",
+                "league": "NFL",
+                "timeZone": "America/Los_Angeles",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
+                "color": "002a5c",
+                "alternateColor": "69be28",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/26?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "metroArea": "St. Louis",
+        "teams": [
+            {
+                "teamName": "St. Louis Blues",
+                "city": "St. Louis",
+                "state": "Missouri",
+                "metroArea": "St. Louis",
+                "league": "NHL",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/stl.png",
+                "color": "00468b",
+                "alternateColor": "fdb71a",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "St. Louis Cardinals",
+                "city": "St. Louis",
+                "state": "Missouri",
+                "metroArea": "St. Louis",
+                "league": "MLB",
+                "timeZone": "America/Chicago",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/scoreboard/stl.png",
+                "color": "be0a14",
+                "alternateColor": "001541",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "metroArea": "Tampa Bay",
+        "teams": [
+            {
+                "teamName": "Tampa Bay Lightning",
+                "city": "Tampa",
+                "state": "Florida",
+                "metroArea": "Tampa Bay",
+                "league": "NHL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/tb.png",
+                "color": "003d7c",
+                "alternateColor": "b2b7bb",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Tampa Bay Rays",
+                "city": "St. Petersburg",
+                "state": "Florida",
+                "metroArea": "Tampa Bay",
+                "league": "MLB",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500/tb.png",
+                "color": "092c5c",
+                "alternateColor": "8fbce6",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Tampa Bay Buccaneers",
+                "city": "Tampa",
+                "state": "Florida",
+                "metroArea": "Tampa Bay",
+                "league": "NFL",
+                "timeZone": "America/New_York",
+                "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
+                "color": "bd1c36",
+                "alternateColor": "3e3a35",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/27?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "metroArea": "Toronto",
+        "teams": [
+            {
+                "teamName": "Toronto Maple Leafs",
+                "city": "Toronto",
+                "state": "Ontario",
+                "metroArea": "Toronto",
+                "league": "NHL",
+                "timeZone": "America/Toronto",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500/scoreboard/tor.png",
+                "color": "003e7e",
+                "alternateColor": "ffffff",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Toronto Blue Jays",
+                "city": "Toronto",
+                "state": "Ontario",
+                "metroArea": "Toronto",
+                "league": "MLB",
+                "timeZone": "America/Toronto",
+                "logo": "https://a.espncdn.com/i/teamlogos/mlb/500-dark/tor.png",
+                "color": "134a8e",
+                "alternateColor": "6cace5",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Toronto FC",
+                "city": "Toronto",
+                "state": "Ontario",
+                "metroArea": "Toronto",
+                "league": "MLS",
+                "timeZone": "America/Toronto"
+            },
+            {
+                "teamName": "Toronto Raptors",
+                "city": "Toronto",
+                "state": "Ontario",
+                "metroArea": "Toronto",
+                "league": "NBA",
+                "timeZone": "America/Toronto",
+                "logo": "https://a.espncdn.com/i/teamlogos/nba/500-dark/tor.png",
+                "color": "d91244",
+                "alternateColor": "000000",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "metroArea": "Vancouver",
+        "teams": [
+            {
+                "teamName": "Vancouver Canucks",
+                "city": "Vancouver",
+                "state": "British Columbia",
+                "metroArea": "Vancouver",
+                "league": "NHL",
+                "timeZone": "America/Vancouver",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/van.png",
+                "color": "003e7e",
+                "alternateColor": "008752",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            },
+            {
+                "teamName": "Vancouver Whitecaps FC",
+                "city": "Vancouver",
+                "state": "British Columbia",
+                "metroArea": "Vancouver",
+                "league": "MLS",
+                "timeZone": "America/Vancouver"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "metroArea": "Winnipeg",
+        "teams": [
+            {
+                "teamName": "Winnipeg Jets",
+                "city": "Winnipeg",
+                "state": "Manitoba",
+                "metroArea": "Winnipeg",
+                "league": "NHL",
+                "timeZone": "America/Winnipeg",
+                "logo": "https://a.espncdn.com/i/teamlogos/nhl/500-dark/scoreboard/wpg.png",
+                "color": "002d62",
+                "alternateColor": "c41230",
+                "teamLink": "http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/2023/teams/34?lang=en&region=us"
+            }
+        ]
+    }
+]
