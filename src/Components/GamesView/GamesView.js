@@ -1,25 +1,10 @@
 import * as React from 'react';
-import {
-    CollectionPreferences,
-    Cards,
-    ColumnLayout,
-    Badge,
-    Button,
-    Box,
-    Header,
-    Icon,
-    Link,
-    Pagination,
-    Popover,
-    SpaceBetween,
-    Table,
-    TextFilter,
-} from '@cloudscape-design/components';
+import { Cards, ColumnLayout, Button, Box, Header, SpaceBetween, TextFilter } from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { getAllGames } from '../../api/api_calls';
 import { TeamsCatalog } from '../../Data/MetroTeams';
 
-const GamesCards = ({ date, setDate, currentState, allGames, setAllGames, loading, setLoading }) => {
+const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }) => {
     const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps } = useCollection(
         allGames,
         {

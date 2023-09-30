@@ -3,19 +3,16 @@ import { TeamsCatalog } from '../../Data/MetroTeams';
 import {
     CollectionPreferences,
     Cards,
-    Badge,
     Button,
     Box,
     Header,
-    Link,
     Pagination,
     Popover,
     SpaceBetween,
-    Table,
     TextFilter,
 } from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
-import { getGames, getAllGames } from '../../api/api_calls';
+import { getAllGames } from '../../api/api_calls';
 
 const TeamPopover = ({ teamInfo }) => {
     return (

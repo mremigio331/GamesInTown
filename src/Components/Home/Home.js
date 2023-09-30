@@ -1,53 +1,12 @@
 import * as React from 'react';
-import { useState, useReducer } from 'react';
-import axios from 'axios';
+import { useReducer } from 'react';
 import { TeamsCatalog } from '../../Data/MetroTeams';
-import { getGames, getAllGames } from '../../api/api_calls';
-import { useQuery } from 'react-query';
 
-import {
-    AppLayout,
-    Container,
-    Cards,
-    ContentLayout,
-    ExpandableSection,
-    Header,
-    Modal,
-    SegmentedControl,
-    SpaceBetween,
-    Button,
-} from '@cloudscape-design/components';
+import { AppLayout, Container, ContentLayout, Header, SpaceBetween, Button } from '@cloudscape-design/components';
 
 import MetroCards from '../MetroCards/MetroCards';
 import GamesCards from '../GamesView/GamesView';
 import Calendar from '../GamesView/Calendar';
-
-const gamesReturn = (currentState) => {
-    return getAllGames(
-        currentState.startDate,
-        currentState.endDate,
-        TeamsCatalog.find((metro) => metro.id === currentState.selectedMetroArea).teams,
-    );
-};
-
-const allGames = async (action) => {
-    let loading = true;
-    let allGames = [];
-
-    await getAllGames(
-        action.type.startDate,
-        action.type.endDate,
-        TeamsCatalog.find((metro) => metro.id === action.type.selectedMetroArea).teams,
-    ).then((resolution) => {
-        allGames = resolution;
-        loading = false;
-    });
-
-    return {
-        loading: loading,
-        games: allGames,
-    };
-};
 
 const reducer = (state, action) => {
     const reducerReturn = {
@@ -80,8 +39,6 @@ const Home = () => {
             allGames: [],
         },
     };
-    const [date, setDate] = React.useState({ type: 'absolute', startDate: startDate, endDate: endDate });
-
     const [currentState, dispatch] = useReducer(reducer, initialState);
     const [loading, setLoading] = React.useState(true);
     const [allGames, setAllGames] = React.useState([]);
@@ -142,8 +99,6 @@ const Home = () => {
                                         variant="h1"
                                         actions={
                                             <Calendar
-                                                date={date}
-                                                setDate={setDate}
                                                 dispatch={dispatch}
                                                 currentState={currentState}
                                                 allGames={allGames}
@@ -163,8 +118,6 @@ const Home = () => {
                                 }
                             >
                                 <GamesCards
-                                    date={date}
-                                    setDate={setDate}
                                     currentState={currentState}
                                     allGames={allGames}
                                     setAllGames={setAllGames}

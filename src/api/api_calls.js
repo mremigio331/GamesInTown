@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import axios from 'axios';
 import { NFLWeeks } from '../Data/NLFWeeks';
 import { AllTeams } from '../Data/AllTeamsInfo';
@@ -58,7 +57,6 @@ const nflGrab = async (start_date, end_date, metroAreaTeams) => {
 
 const NFLAPI = async (week) => {
     const requestURL = `https://cdn.espn.com/core/nfl/schedule?xhr=1&year=2023&week=${week}`;
-    console.log(requestURL);
     const response = await axios
         .get(requestURL)
         .then((res) => {
@@ -128,7 +126,6 @@ const WeeksIdentifer = (start_date, end_date) => {
 // MLB Functions
 const MLBAPI = async (start_date, end_date, metroAreaTeams) => {
     const requestURL = `https://statsapi.mlb.com/api/v1/schedule/games/?sportId=1&startDate=${start_date}&endDate=${end_date}`;
-    console.log(requestURL);
     const response = await axios
         .get(requestURL)
         .then((res) => {
@@ -153,8 +150,6 @@ const MLBScrubber = (metroAreaTeams, response) => {
             const awayTeam = game.teams.away.team.name;
             const homeRecord = game.teams.home.leagueRecord;
             const awayRecord = game.teams.away.leagueRecord;
-            const homeLogo = homeTeam.replace(/\s/g, '');
-            const awayLogo = awayTeam.replace(/\s/g, '');
             MLBTeams.includes(game.teams.home.team.name)
                 ? MLBGames.push({
                       dateTime: new Date(game.gameDate).toLocaleString('en-US', {
@@ -183,7 +178,6 @@ const MLBScrubber = (metroAreaTeams, response) => {
 // NHL Functions
 const NHLAPI = async (start_date, end_date, metroAreaTeams) => {
     const requestURL = `https://statsapi.web.nhl.com/api/v1/schedule??sportId=1&startDate=${start_date}&endDate=${end_date}`;
-    console.log(requestURL);
 
     const response = await axios
         .get(requestURL)

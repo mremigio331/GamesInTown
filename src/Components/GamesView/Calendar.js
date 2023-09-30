@@ -1,9 +1,9 @@
 import * as React from 'react';
 import DateRangePicker from '@cloudscape-design/components/date-range-picker';
-import { getGames, getAllGames } from '../../api/api_calls';
+import { getAllGames } from '../../api/api_calls';
 import { TeamsCatalog } from '../../Data/MetroTeams';
 
-export default ({ date, setDate, dispatch, currentState, allGames, setAllGames, loading, setLoading }) => {
+export default ({ dispatch, currentState, allGames, setAllGames, loading, setLoading }) => {
     return (
         <DateRangePicker
             onChange={async ({ detail }) => {
