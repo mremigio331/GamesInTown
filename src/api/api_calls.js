@@ -71,7 +71,7 @@ const ESPNScrubber = (metroAreaTeams, games, league) => {
     games.map((game) => {
         const homeTeam = game.competitions[0].competitors[0].team.displayName;
         const awayTeam = game.competitions[0].competitors[1].team.displayName;
-        const neutralSite = game.competitions[0].neutralSite
+        const neutralSite = game.competitions[0].neutralSite;
         const homeRecord = () => {
             try {
                 return game.competitions[0].competitors[0].records[0].summary;
@@ -81,22 +81,23 @@ const ESPNScrubber = (metroAreaTeams, games, league) => {
         };
         const awayRecord = () => {
             try {
-                return game.competitions[0].competitors[1].records[0].summary
+                return game.competitions[0].competitors[1].records[0].summary;
             } catch {
                 return null;
             }
         };
 
         Teams.includes(homeTeam)
-            ? neutralSite == false && AllGames.push({
+            ? neutralSite == false &&
+              AllGames.push({
                   dateTime: new Date(game.date).toLocaleString('en-US', {
                       timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam),
                   }),
                   location: {
-                    venue: game.competitions[0].venue.fullName,
-                    city: game.competitions[0].venue.address.city,
-                    state: game.competitions[0].venue.address.state,
-                    capacity: game.competitions[0].venue.capacity
+                      venue: game.competitions[0].venue.fullName,
+                      city: game.competitions[0].venue.address.city,
+                      state: game.competitions[0].venue.address.state,
+                      capacity: game.competitions[0].venue.capacity,
                   },
                   homeTeam: {
                       teamName: homeTeam,
@@ -110,7 +111,7 @@ const ESPNScrubber = (metroAreaTeams, games, league) => {
                   },
                   league: league,
                   fullInfo: game,
-                  gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, m => m.toUpperCase())
+                  gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
               })
             : null;
     });

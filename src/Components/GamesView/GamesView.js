@@ -4,35 +4,31 @@ import { useCollection } from '@cloudscape-design/collection-hooks';
 import { getAllGames } from '../../api/api_calls';
 import { TeamsCatalog } from '../../Data/MetroTeams';
 
-const GameCardHeader = ({item}) => {
+const GameCardHeader = ({ item }) => {
     return (
         <ColumnLayout columns={2} variant="text-grid">
-                        <div>
-                            <SpaceBetween>
-                                <Box fontSize="display-l" fontWeight="bold">
-                                    {item.awayTeam.logo == null ? null : (
-                                        <img width="50" height="50" src={item.awayTeam.logo} />
-                                    )}
-                                    {item.awayTeam.teamName}
-                                </Box>
-                                <Box>{item.awayTeam.record}</Box>
-                            </SpaceBetween>
-                        </div>
-                        <div>
-                            <SpaceBetween>
-                                <Box fontSize="display-l" fontWeight="bold" float="right">
-                                    {item.homeTeam.teamName}
-                                    {item.awayTeam.logo == null ? null : (
-                                        <img width="50" height="50" src={item.homeTeam.logo} />
-                                    )}
-                                    <Box fontSize="display-l" fontWeight="bold"></Box>
-                                </Box>
-                                <Box float="right">{item.homeTeam.record}</Box>
-                            </SpaceBetween>
-                        </div>
-                    </ColumnLayout>
-    )
-}
+            <div>
+                <SpaceBetween>
+                    <Box fontSize="display-l" fontWeight="bold">
+                        {item.awayTeam.logo == null ? null : <img width="50" height="50" src={item.awayTeam.logo} />}
+                        {item.awayTeam.teamName}
+                    </Box>
+                    <Box>{item.awayTeam.record}</Box>
+                </SpaceBetween>
+            </div>
+            <div>
+                <SpaceBetween>
+                    <Box fontSize="display-l" fontWeight="bold" float="right">
+                        {item.homeTeam.teamName}
+                        {item.awayTeam.logo == null ? null : <img width="50" height="50" src={item.homeTeam.logo} />}
+                        <Box fontSize="display-l" fontWeight="bold"></Box>
+                    </Box>
+                    <Box float="right">{item.homeTeam.record}</Box>
+                </SpaceBetween>
+            </div>
+        </ColumnLayout>
+    );
+};
 
 const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }) => {
     const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps } = useCollection(
@@ -54,7 +50,7 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                 selectionGroupLabel: 'Item selection',
             }}
             cardDefinition={{
-                header: (item) =>  <GameCardHeader item={item}/>,
+                header: (item) => <GameCardHeader item={item} />,
                 sections: [
                     {
                         id: 'time',
@@ -74,7 +70,7 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                     {
                         id: 'gameType',
                         header: 'Game Type',
-                        content: (item) => item.gameType
+                        content: (item) => item.gameType,
                     },
                     {
                         id: 'leage',
@@ -106,13 +102,7 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                     </SpaceBetween>
                 </Box>
             }
-            header={
-                <Header
-                counter={filteredItemsCount}
-                >
-                    Games
-                </Header>
-            }
+            header={<Header counter={filteredItemsCount}>Games</Header>}
         />
     );
 };
