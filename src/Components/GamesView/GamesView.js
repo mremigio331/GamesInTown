@@ -4,28 +4,9 @@ import { useCollection } from '@cloudscape-design/collection-hooks';
 import { getAllGames } from '../../api/api_calls';
 import { TeamsCatalog } from '../../Data/MetroTeams';
 
-const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }) => {
-    const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps } = useCollection(
-        allGames,
-        {
-            filtering: {},
-            pagination: { pageSize: 10 },
-        },
-    );
-
+const GameCardHeader = ({item}) => {
     return (
-        <Cards
-            {...actions}
-            {...collectionProps}
-            stickyHeader
-            stickyHeaderVerticalOffset={20}
-            ariaLabels={{
-                itemSelectionLabel: (e, n) => `select ${n.metroArea}`,
-                selectionGroupLabel: 'Item selection',
-            }}
-            cardDefinition={{
-                header: (item) => (
-                    <ColumnLayout columns={2} variant="text-grid">
+        <ColumnLayout columns={2} variant="text-grid">
                         <div>
                             <SpaceBetween>
                                 <Box fontSize="display-l" fontWeight="bold">
@@ -50,7 +31,30 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                             </SpaceBetween>
                         </div>
                     </ColumnLayout>
-                ),
+    )
+}
+
+const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }) => {
+    const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps } = useCollection(
+        allGames,
+        {
+            filtering: {},
+            pagination: { pageSize: 10 },
+        },
+    );
+
+    return (
+        <Cards
+            {...actions}
+            {...collectionProps}
+            stickyHeader
+            stickyHeaderVerticalOffset={20}
+            ariaLabels={{
+                itemSelectionLabel: (e, n) => `select ${n.metroArea}`,
+                selectionGroupLabel: 'Item selection',
+            }}
+            cardDefinition={{
+                header: (item) =>  <GameCardHeader item={item}/>,
                 sections: [
                     {
                         id: 'time',
@@ -58,9 +62,19 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                         content: (item) => item.dateTime,
                     },
                     {
+                        id: 'venue',
+                        header: 'Venue',
+                        content: (item) => `${item.location.venue} (Capacity: ${item.location.capacity})`,
+                    },
+                    {
                         id: 'location',
                         header: 'Location',
-                        content: (item) => item.location,
+                        content: (item) => `${item.location.city}, ${item.location.state}`,
+                    },
+                    {
+                        id: 'gameType',
+                        header: 'Game Type',
+                        content: (item) => item.gameType
                     },
                     {
                         id: 'leage',
@@ -80,7 +94,7 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                 ],
             }}
             filter={<TextFilter filteringPlaceholder="Teams" {...filterProps} />}
-            visibleSections={['time', 'location', 'league']}
+            visibleSections={['time', 'location', 'venue', 'league', 'gameType']}
             cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 1 }]}
             items={items}
             loading={loading}
@@ -94,34 +108,13 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
             }
             header={
                 <Header
-                    actions={
-                        <Button
-                            onClick={async () => {
-                                setLoading(true);
-                                const gamesReturn = await getAllGames(
-                                    currentState.startDate,
-                                    currentState.endDate,
-                                    TeamsCatalog.find((metro) => metro.id === currentState.selectedMetroArea).teams,
-                                );
-                                setAllGames(gamesReturn);
-                                setLoading(false);
-                            }}
-                        >
-                            Load Games
-                        </Button>
-                    }
+                counter={filteredItemsCount}
                 >
                     Games
                 </Header>
             }
         />
     );
-};
-
-const GamesView = () => {
-    <Container>
-        <GamesCards />
-    </Container>;
 };
 
 export default GamesCards;
