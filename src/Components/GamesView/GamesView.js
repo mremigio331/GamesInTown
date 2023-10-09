@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Cards, ColumnLayout, Button, Box, Header, SpaceBetween, TextFilter } from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
-import { getAllGames } from '../../api/api_calls';
-import { TeamsCatalog } from '../../Data/MetroTeams';
 
 const GameCardHeader = ({ item }) => {
     return (

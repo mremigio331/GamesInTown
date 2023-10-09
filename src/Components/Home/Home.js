@@ -11,11 +11,12 @@ import Calendar from '../GamesView/Calendar';
 const reducer = (state, action) => {
     const reducerReturn = {
         metroAreaCards: action.type.metroAreaCards,
-        gameLoad: action.type.gameLoad,
         selectedMetroArea: action.type.selectedMetroArea,
-        startDate: action.type.startDate,
-        endDate: action.type.endDate,
-        allGames: [],
+        dateInfo: {
+            type: action.type.dateInfo.type,
+            startDate: action.type.dateInfo.startDate,
+            endDate: action.type.dateInfo.endDate,
+        },
     };
     return reducerReturn;
 };
@@ -29,14 +30,11 @@ const Home = () => {
 
     const initialState = {
         metroAreaCards: true,
-        gameLoad: true,
         selectedMetroArea: Math.floor(Math.random() * TeamsCatalog.length),
-        startDate: startDate,
-        endDate: endDate,
-        allGames: {
-            loading: true,
-            error: false,
-            allGames: [],
+        dateInfo: {
+            type: 'absolute',
+            startDate: startDate,
+            endDate: endDate,
         },
     };
     const [currentState, dispatch] = useReducer(reducer, initialState);
@@ -61,11 +59,8 @@ const Home = () => {
                                             dispatch({
                                                 type: {
                                                     metroAreaCards: true,
-                                                    gameLoad: false,
                                                     selectedMetroArea: currentState.selectedMetroArea,
-                                                    startDate: currentState.startDate,
-                                                    endDate: currentState.endDate,
-                                                    allGames: currentState.allGames,
+                                                    dateInfo: currentState.dateInfo,
                                                 },
                                             });
                                         }}
@@ -92,40 +87,38 @@ const Home = () => {
                                 />
                             </Container>
                         ) : null}
-                        {currentState.gameLoad === true ? (
-                            <Container
-                                header={
-                                    <Header
-                                        variant="h1"
-                                        actions={
-                                            <Calendar
-                                                dispatch={dispatch}
-                                                currentState={currentState}
-                                                allGames={allGames}
-                                                setAllGames={setAllGames}
-                                                loading={loading}
-                                                setLoading={setLoading}
-                                            />
-                                        }
-                                    >
-                                        Games In The{' '}
-                                        {
-                                            TeamsCatalog.find((metro) => metro.id === currentState.selectedMetroArea)
-                                                .metroArea
-                                        }{' '}
-                                        Area
-                                    </Header>
-                                }
-                            >
-                                <GamesCards
-                                    currentState={currentState}
-                                    allGames={allGames}
-                                    setAllGames={setAllGames}
-                                    loading={loading}
-                                    setLoading={setLoading}
-                                />
-                            </Container>
-                        ) : null}
+                        <Container
+                            header={
+                                <Header
+                                    variant="h1"
+                                    actions={
+                                        <Calendar
+                                            dispatch={dispatch}
+                                            currentState={currentState}
+                                            allGames={allGames}
+                                            setAllGames={setAllGames}
+                                            loading={loading}
+                                            setLoading={setLoading}
+                                        />
+                                    }
+                                >
+                                    Games In The{' '}
+                                    {
+                                        TeamsCatalog.find((metro) => metro.id === currentState.selectedMetroArea)
+                                            .metroArea
+                                    }{' '}
+                                    Area
+                                </Header>
+                            }
+                        >
+                            <GamesCards
+                                currentState={currentState}
+                                allGames={allGames}
+                                setAllGames={setAllGames}
+                                loading={loading}
+                                setLoading={setLoading}
+                            />
+                        </Container>
                     </SpaceBetween>
                 </ContentLayout>
             }

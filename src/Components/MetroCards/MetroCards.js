@@ -81,17 +81,14 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                                     dispatch({
                                         type: {
                                             metroAreaCards: false,
-                                            gameLoad: true,
                                             selectedMetroArea: item.id,
-                                            startDate: currentState.startDate,
-                                            endDate: currentState.endDate,
-                                            allGames: currentState.allGames,
+                                            dateInfo: currentState.dateInfo,
                                         },
                                     });
                                     setLoading(true);
                                     const gamesReturn = await getAllGames(
-                                        currentState.startDate,
-                                        currentState.endDate,
+                                        currentState.dateInfo.startDate,
+                                        currentState.dateInfo.endDate,
                                         TeamsCatalog.find((metro) => metro.id === item.id).teams,
                                     );
                                     setAllGames(gamesReturn);

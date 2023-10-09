@@ -1,14 +1,12 @@
 import * as React from 'react';
 import axios from 'axios';
-import { NFLWeeks } from '../Data/NLFWeeks';
-import { AllTeams } from '../Data/AllTeamsInfo';
 
-export const getAllGames = async (start_date, end_date, metroAreaTeams) => {
+export const getAllGames = async (startDate, endDate, metroAreaTeams) => {
     let allGamesReturn = [];
-    const mlb = await FullGamesReturn(start_date, end_date, metroAreaTeams, 'baseball', 'mlb'); //MLBAPI(start_date, end_date, metroAreaTeams);
-    const nhl = await FullGamesReturn(start_date, end_date, metroAreaTeams, 'hockey', 'nhl');
-    const nfl = await FullGamesReturn(start_date, end_date, metroAreaTeams, 'football', 'nfl'); //NFLGrab(start_date, end_date, metroAreaTeams);
-    const nba = await FullGamesReturn(start_date, end_date, metroAreaTeams, 'basketball', 'nba');
+    const mlb = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'baseball', 'mlb'); //MLBAPI(startDate, endDate, metroAreaTeams);
+    const nhl = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'hockey', 'nhl');
+    const nfl = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'football', 'nfl'); //NFLGrab(startDate, endDate, metroAreaTeams);
+    const nba = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'basketball', 'nba');
     mlb.map((game) => allGamesReturn.push(game));
     nhl.map((game) => allGamesReturn.push(game));
     nfl.map((game) => allGamesReturn.push(game));
@@ -22,8 +20,8 @@ export const getAllGames = async (start_date, end_date, metroAreaTeams) => {
     return allGamesReturn;
 };
 
-const FullGamesReturn = async (start_date, end_date, metroAreaTeams, sport, league) => {
-    const datesLookup = DatesIdentifier(start_date, end_date);
+const FullGamesReturn = async (startDate, endDate, metroAreaTeams, sport, league) => {
+    const datesLookup = DatesIdentifier(startDate, endDate);
     let games = [];
     await Promise.all(
         datesLookup.map(async (date) => {
@@ -41,8 +39,14 @@ const TimeZoneIdentifier = (metroAreaTeams, specificTeam) => {
     return highlightTeamInfo[0].timeZone;
 };
 
-const DatesIdentifier = (start_date, end_date) => {
-    for (var dates = [], dt = new Date(start_date); dt <= new Date(end_date); dt.setDate(dt.getDate() + 1)) {
+const DatesIdentifier = (startDate, endDate) => {
+    startDate = startDate.replaceAll('-', '/');
+    endDate = endDate.replaceAll('-', '/');
+
+    const setStartDate = new Date(startDate);
+    const setEndDate = new Date(endDate);
+
+    for (var dates = [], dt = new Date(startDate); dt <= new Date(endDate); dt.setDate(dt.getDate() + 1)) {
         dates.push(new Date(dt).toISOString().split('T')[0].replaceAll('-', ''));
     }
     return dates;

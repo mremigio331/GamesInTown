@@ -7,15 +7,15 @@ export default ({ dispatch, currentState, allGames, setAllGames, loading, setLoa
     return (
         <DateRangePicker
             onChange={async ({ detail }) => {
-                console.log(detail);
                 dispatch({
                     type: {
                         metroAreaCards: currentState.metroAreaCards,
-                        gameLoad: currentState.gameLoad,
                         selectedMetroArea: currentState.selectedMetroArea,
-                        startDate: detail.value.startDate,
-                        endDate: detail.value.endDate,
-                        allGames: currentState.allGames,
+                        dateInfo: {
+                            type: currentState.dateInfo.type,
+                            startDate: detail.value.startDate,
+                            endDate: detail.value.endDate,
+                        },
                     },
                 });
                 setLoading(true);
@@ -27,34 +27,8 @@ export default ({ dispatch, currentState, allGames, setAllGames, loading, setLoa
                 setAllGames(gamesReturn);
                 setLoading(false);
             }}
-            value={{ type: 'absolute', startDate: currentState.startDate, endDate: currentState.endDate }}
+            value={currentState.dateInfo}
             dateOnly
-            relativeOptions={[
-                {
-                    key: 'previous-5-minutes',
-                    amount: 5,
-                    unit: 'minute',
-                    type: 'relative',
-                },
-                {
-                    key: 'previous-30-minutes',
-                    amount: 30,
-                    unit: 'minute',
-                    type: 'relative',
-                },
-                {
-                    key: 'previous-1-hour',
-                    amount: 1,
-                    unit: 'hour',
-                    type: 'relative',
-                },
-                {
-                    key: 'previous-6-hours',
-                    amount: 6,
-                    unit: 'hour',
-                    type: 'relative',
-                },
-            ]}
             isValidRange={(range) => {
                 if (range.type === 'absolute') {
                     const [startDateWithoutTime] = range.startDate.split('T');
