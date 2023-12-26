@@ -23,6 +23,7 @@ export default ({ dispatch, currentState, allGames, setAllGames, loading, setLoa
                     detail.value.startDate,
                     detail.value.endDate,
                     TeamsCatalog.find((metro) => metro.id === currentState.selectedMetroArea).teams,
+                    TeamsCatalog.find((metro) => metro.id === currentState.selectedMetroArea).stadiums,
                 );
                 setAllGames(gamesReturn);
                 setLoading(false);

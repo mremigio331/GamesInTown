@@ -1,0 +1,48 @@
+{
+    "AmericanLeague": {
+        "East": [
+            { "Stadium": "Fenway Park", "MetroArea": "Boston" },
+            { "Stadium": "Yankee Stadium", "MetroArea": "New York" },
+            { "Stadium": "Oriole Park at Camden Yards", "MetroArea": "Baltimore" },
+            { "Stadium": "Tropicana Field", "MetroArea": "Tampa Bay" },
+            { "Stadium": "Rogers Centre", "MetroArea": "Toronto" }
+        ],
+        "Central": [
+            { "Stadium": "Guaranteed Rate Field", "MetroArea": "Chicago" },
+            { "Stadium": "Progressive Field", "MetroArea": "Cleveland" },
+            { "Stadium": "Comerica Park", "MetroArea": "Detroit" },
+            { "Stadium": "Kauffman Stadium", "MetroArea": "Kansas City" },
+            { "Stadium": "Target Field", "MetroArea": "Minneapolis" }
+        ],
+        "West": [
+            { "Stadium": "Minute Maid Park", "MetroArea": "Houston" },
+            { "Stadium": "Globe Life Field", "MetroArea": "Dallas-Fort Worth" },
+            { "Stadium": "Angel Stadium of Anaheim", "MetroArea": "Los Angeles" },
+            { "Stadium": "Oakland Coliseum", "MetroArea": "San Francisco Bay" },
+            { "Stadium": "T-Mobile Park", "MetroArea": "Seattle" }
+        ]
+    },
+    "NationalLeague": {
+        "East": [
+            { "Stadium": "Truist Park", "MetroArea": "Atlanta" },
+            { "Stadium": "Marlins Park", "MetroArea": "Miami" },
+            { "Stadium": "Citi Field", "MetroArea": "New York" },
+            { "Stadium": "Citizens Bank Park", "MetroArea": "Philadelphia" },
+            { "Stadium": "Nationals Park", "MetroArea": "Washington, D.C." }
+        ],
+        "Central": [
+            { "Stadium": "Wrigley Field", "MetroArea": "Chicago" },
+            { "Stadium": "Great American Ball Park", "MetroArea": "Cincinnati" },
+            { "Stadium": "Truist Field", "MetroArea": "Milwaukee" },
+            { "Stadium": "Busch Stadium", "MetroArea": "St. Louis" },
+            { "Stadium": "PNC Park", "MetroArea": "Pittsburgh" }
+        ],
+        "West": [
+            { "Stadium": "Dodger Stadium", "MetroArea": "Los Angeles" },
+            { "Stadium": "Oracle Park", "MetroArea": "San Francisco" },
+            { "Stadium": "Petco Park", "MetroArea": "San Diego" },
+            { "Stadium": "Chase Field", "MetroArea": "Phoenix" },
+            { "Stadium": "Coors Field", "MetroArea": "Denver" }
+        ]
+    }
+}

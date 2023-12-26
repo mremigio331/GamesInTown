@@ -1,6 +1,16 @@
 import * as React from 'react';
-import { Cards, ColumnLayout, Button, Box, Header, SpaceBetween, TextFilter } from '@cloudscape-design/components';
+import {
+    Cards,
+    ColumnLayout,
+    Button,
+    Box,
+    Header,
+    PropertyFilter,
+    SpaceBetween,
+    TextFilter,
+} from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
+import { VenuImageCollector } from '../../api/api_calls';
 
 const GameCardHeader = ({ item }) => {
     return (
@@ -28,14 +38,49 @@ const GameCardHeader = ({ item }) => {
     );
 };
 
+const GameCardDescription = ({ item }) => {
+    const [venueImage, setVenueImage] = React.useState(null);
+    const venueImageGrab = async () => {
+        await VenuImageCollector(item.location.venueId, item.sport, item.league.toLowerCase())
+            .then((image) => {
+                setVenueImage(image);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+    venueImageGrab();
+
+    return (
+        <ColumnLayout columns={2} variant="text-grid">
+            <div>
+                <SpaceBetween>
+                    <Box variant="awsui-key-label">Date/Time</Box>
+                    <div>{`${item.dayOfTheWeek} ${item.dateTime}`}</div>
+                    <Box variant="awsui-key-label">Venu</Box>
+                    <div>{`${item.location.venue} (Capacity: ${item.location.capacity})`}</div>
+                    <div>{`${item.location.city}, ${item.location.state}`}</div>
+                    <Box variant="awsui-key-label">Type</Box>
+                    <div>{item.gameType}</div>
+                </SpaceBetween>
+            </div>
+            <div>
+                <SpaceBetween>
+                    <Box float="right">
+                        {venueImage == null ? null : <img width="400" height="200" src={venueImage} />}
+                    </Box>
+                </SpaceBetween>
+            </div>
+        </ColumnLayout>
+    );
+};
+
 const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }) => {
-    const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps } = useCollection(
-        allGames,
-        {
+    const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps, propertyFilterProps } =
+        useCollection(allGames, {
             filtering: {},
             pagination: { pageSize: 10 },
-        },
-    );
+        });
 
     return (
         <Cards
@@ -51,9 +96,13 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                 header: (item) => <GameCardHeader item={item} />,
                 sections: [
                     {
+                        id: 'gameInfo',
+                        content: (item) => <GameCardDescription item={item} />,
+                    },
+                    {
                         id: 'time',
-                        header: 'Time',
-                        content: (item) => item.dateTime,
+                        header: 'Date Time',
+                        content: (item) => `${item.dayOfTheWeek} ${item.dateTime}`,
                     },
                     {
                         id: 'venue',
@@ -88,7 +137,7 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                 ],
             }}
             filter={<TextFilter filteringPlaceholder="Teams" {...filterProps} />}
-            visibleSections={['time', 'location', 'venue', 'league', 'gameType']}
+            visibleSections={['gameInfo']}
             cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 1 }]}
             items={items}
             loading={loading}

@@ -21,6 +21,44 @@ const reducer = (state, action) => {
     return reducerReturn;
 };
 
+const ChangMetroAreaButton = ({ currentState, dispatch }) => {
+    return (
+        <Button
+            onClick={() => {
+                dispatch({
+                    type: {
+                        metroAreaCards: true,
+                        selectedMetroArea: currentState.selectedMetroArea,
+                        dateInfo: currentState.dateInfo,
+                    },
+                });
+                return;
+            }}
+        >
+            Change Metro Area
+        </Button>
+    );
+};
+
+const CloseMetroAreaButton = ({ currentState, dispatch }) => {
+    return (
+        <Button
+            onClick={() => {
+                dispatch({
+                    type: {
+                        metroAreaCards: false,
+                        selectedMetroArea: currentState.selectedMetroArea,
+                        dateInfo: currentState.dateInfo,
+                    },
+                });
+                return;
+            }}
+        >
+            Close Metro Area Cards
+        </Button>
+    );
+};
+
 const Home = () => {
     var today = new Date();
     var futureDate = new Date();
@@ -54,22 +92,14 @@ const Home = () => {
                                 variant="h1"
                                 description="Who's Playing When I'm In...."
                                 actions={
-                                    <Button
-                                        onClick={() => {
-                                            dispatch({
-                                                type: {
-                                                    metroAreaCards: true,
-                                                    selectedMetroArea: currentState.selectedMetroArea,
-                                                    dateInfo: currentState.dateInfo,
-                                                },
-                                            });
-                                        }}
-                                    >
-                                        Change Metro Area
-                                    </Button>
+                                    currentState.metroAreaCards == false ? (
+                                        <ChangMetroAreaButton currentState={currentState} dispatch={dispatch} />
+                                    ) : (
+                                        <CloseMetroAreaButton currentState={currentState} dispatch={dispatch} />
+                                    )
                                 }
                             >
-                                Games In Town
+                                Teams In Town
                             </Header>
                         </SpaceBetween>
                     }

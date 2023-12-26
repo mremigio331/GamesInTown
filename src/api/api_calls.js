@@ -1,12 +1,12 @@
 import * as React from 'react';
 import axios from 'axios';
 
-export const getAllGames = async (startDate, endDate, metroAreaTeams) => {
+export const getAllGames = async (startDate, endDate, metroAreaTeams, stadiums) => {
     let allGamesReturn = [];
-    const mlb = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'baseball', 'mlb'); //MLBAPI(startDate, endDate, metroAreaTeams);
-    const nhl = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'hockey', 'nhl');
-    const nfl = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'football', 'nfl'); //NFLGrab(startDate, endDate, metroAreaTeams);
-    const nba = await FullGamesReturn(startDate, endDate, metroAreaTeams, 'basketball', 'nba');
+    const mlb = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'baseball', 'mlb');
+    const nhl = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'hockey', 'nhl');
+    const nfl = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'football', 'nfl');
+    const nba = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'nba');
     mlb.map((game) => allGamesReturn.push(game));
     nhl.map((game) => allGamesReturn.push(game));
     nfl.map((game) => allGamesReturn.push(game));
@@ -20,7 +20,7 @@ export const getAllGames = async (startDate, endDate, metroAreaTeams) => {
     return allGamesReturn;
 };
 
-const FullGamesReturn = async (startDate, endDate, metroAreaTeams, sport, league) => {
+const FullGamesReturn = async (startDate, endDate, metroAreaTeams, stadiums, sport, league) => {
     const datesLookup = DatesIdentifier(startDate, endDate);
     let games = [];
     await Promise.all(
@@ -29,14 +29,20 @@ const FullGamesReturn = async (startDate, endDate, metroAreaTeams, sport, league
             dateGames.events.map((game) => games.push(game));
         }),
     );
-    return ESPNScrubber(metroAreaTeams, games, league.toUpperCase());
+    return UpdatedESPNScrubber(metroAreaTeams, stadiums, games, league.toUpperCase(), sport);
 };
 
 const TimeZoneIdentifier = (metroAreaTeams, specificTeam) => {
     let highlightTeamInfo = metroAreaTeams.filter(function (metroAreaTeams) {
         return metroAreaTeams.teamName == specificTeam;
     });
-    return highlightTeamInfo[0].timeZone;
+    try {
+        return highlightTeamInfo[0].timeZone;
+    }
+    catch {
+        return metroAreaTeams[0].timeZone
+    }
+    
 };
 
 const DatesIdentifier = (startDate, endDate) => {
@@ -53,7 +59,7 @@ const DatesIdentifier = (startDate, endDate) => {
 };
 
 const ESPNAPI = async (sport, league, date) => {
-    const requestURL = `http://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?calendartype=whitelist&limit=100&dates=${date}`;
+    const requestURL = `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?calendartype=whitelist&limit=100&dates=${date}`;
     const response = await axios
         .get(requestURL)
         .then((res) => {
@@ -66,58 +72,86 @@ const ESPNAPI = async (sport, league, date) => {
     return response.data;
 };
 
-const ESPNScrubber = (metroAreaTeams, games, league) => {
-    let Teams = metroAreaTeams.filter(function (metroAreaTeams) {
-        return metroAreaTeams.league == league;
-    });
-    Teams = Teams.map((team) => team.teamName);
-    let AllGames = [];
-    games.map((game) => {
-        const homeTeam = game.competitions[0].competitors[0].team.displayName;
-        const awayTeam = game.competitions[0].competitors[1].team.displayName;
-        const neutralSite = game.competitions[0].neutralSite;
-        const homeRecord = () => {
-            try {
-                return game.competitions[0].competitors[0].records[0].summary;
-            } catch {
-                return null;
-            }
-        };
-        const awayRecord = () => {
-            try {
-                return game.competitions[0].competitors[1].records[0].summary;
-            } catch {
-                return null;
-            }
-        };
+const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, sport) => {
+    let allGames = [];
 
-        Teams.includes(homeTeam)
-            ? neutralSite == false &&
-              AllGames.push({
-                  dateTime: new Date(game.date).toLocaleString('en-US', {
-                      timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam),
-                  }),
-                  location: {
-                      venue: game.competitions[0].venue.fullName,
-                      city: game.competitions[0].venue.address.city,
-                      state: game.competitions[0].venue.address.state,
-                      capacity: game.competitions[0].venue.capacity,
-                  },
-                  homeTeam: {
-                      teamName: homeTeam,
-                      record: homeRecord(),
-                      logo: game.competitions[0].competitors[0].team.logo,
-                  },
-                  awayTeam: {
-                      teamName: awayTeam,
-                      record: awayRecord(),
-                      logo: game.competitions[0].competitors[1].team.logo,
-                  },
-                  league: league,
-                  fullInfo: game,
-                  gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
-              })
-            : null;
+    games.forEach((game) => {
+        const venueID = game.competitions[0].venue.id;
+        const venueName = game.competitions[0].venue.fullName;
+
+        const stadiumInfo = stadiums.find(info => info.id == venueID && info.venue_name == venueName);
+
+        if (stadiumInfo) {
+            const homeTeam = game.competitions[0].competitors[0].team.displayName;
+            const awayTeam = game.competitions[0].competitors[1].team.displayName;
+            const neutralSite = game.competitions[0].neutralSite;
+
+            const homeRecord = () => {
+                try {
+                    return game.competitions[0].competitors[0].records[0].summary;
+                } catch {
+                    return null;
+                }
+            };
+
+            const awayRecord = () => {
+                try {
+                    return game.competitions[0].competitors[1].records[0].summary;
+                } catch {
+                    return null;
+                }
+            };
+
+            const dateTime = new Date(game.date).toLocaleString('en-US', {
+                timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam)
+            });
+
+            const dayOfTheWeek = DAYNAMES[new Date(dateTime).getDay()]
+            allGames.push({
+                dateTime: dateTime,
+                dayOfTheWeek: dayOfTheWeek,
+                location: {
+                    venue: game.competitions[0].venue.fullName,
+                    city: game.competitions[0].venue.address.city,
+                    state: game.competitions[0].venue.address.state,
+                    capacity: game.competitions[0].venue.capacity,
+                    venueId: game.competitions[0].venue.id,
+                },
+                homeTeam: {
+                    teamName: homeTeam,
+                    record: homeRecord(),
+                    logo: game.competitions[0].competitors[0].team.logo,
+                },
+                awayTeam: {
+                    teamName: awayTeam,
+                    record: awayRecord(),
+                    logo: game.competitions[0].competitors[1].team.logo,
+                },
+                sport: sport,
+                league: league,
+                fullInfo: game,
+                gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
+                neutralSite: neutralSite
+            });
+        }
     });
-    return AllGames;
+
+    return allGames;
 };
+
+
+export const VenuImageCollector = async (venuID, sport, league) => {
+    const requestURL = `https://sports.core.api.espn.com/v2/sports/${sport}/leagues/${league}/venues/${venuID}?lang=en&region=us`;
+    const response = await axios
+        .get(requestURL)
+        .then((res) => {
+            return res;
+        })
+        .catch((error) => {
+            return error;
+        });
+
+    return response.data.images[0].href;
+};
+
+const DAYNAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

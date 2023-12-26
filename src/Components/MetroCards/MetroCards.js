@@ -90,6 +90,7 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                                         currentState.dateInfo.startDate,
                                         currentState.dateInfo.endDate,
                                         TeamsCatalog.find((metro) => metro.id === item.id).teams,
+                                        TeamsCatalog.find((metro) => metro.id === item.id).stadiums,
                                     );
                                     setAllGames(gamesReturn);
                                     setLoading(false);
