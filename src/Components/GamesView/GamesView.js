@@ -56,7 +56,7 @@ const GameCardDescription = ({ item }) => {
             <div>
                 <SpaceBetween>
                     {
-                        item.gameNote != null &&  <Box variant="h2">{item.gameNote}</Box>
+                        item.gameNote != null &&  <Box variant="h1">{item.gameNote}</Box>
                     }
                     <Box variant="awsui-key-label">Date/Time</Box>
                     <div>{`${item.dayOfTheWeek} ${item.dateTime}`}</div>

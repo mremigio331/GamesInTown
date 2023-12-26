@@ -136,7 +136,7 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                     },
                     {
                         id: 'Teams',
-                        ccontent: (item) => item.teams.map((team) => team.teamName),
+                        content: (item) => item.teams.map((team) => team.teamName),
                     },
                 ],
             }}
@@ -144,7 +144,7 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
             items={items}
             loadingText="Loading resources"
             trackBy="name"
-            visibleSections={['MLB', 'NBA', 'NFL', 'NHL']}
+            visibleSections={['MLB', 'NBA', 'NFL', 'NHL', 'MLS']}
             empty={
                 <Box margin={{ vertical: 'xs' }} textAlign="center" color="inherit">
                     <SpaceBetween size="m">

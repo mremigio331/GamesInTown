@@ -3,14 +3,38 @@ import axios from 'axios';
 
 export const getAllGames = async (startDate, endDate, metroAreaTeams, stadiums) => {
     let allGamesReturn = [];
+    // baseball
     const mlb = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'baseball', 'mlb');
+
+    // hockey
     const nhl = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'hockey', 'nhl');
+
+    // football
     const nfl = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'football', 'nfl');
+    const ncaaFootball = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'football', 'college-football');
+
+    // basketball
     const nba = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'nba');
+    const wnba = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'wnba');
+    const ncaaMensBasketball = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'mens-college-basketball');
+    const ncaaWomensBasketball = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'womens-college-basketball');
+    
+    // soccer 
+    const mls = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'soccer', 'usa.1');
+
     mlb.map((game) => allGamesReturn.push(game));
+    
     nhl.map((game) => allGamesReturn.push(game));
+    
     nfl.map((game) => allGamesReturn.push(game));
+    ncaaFootball.map((game) => allGamesReturn.push(game));
+    
     nba.map((game) => allGamesReturn.push(game));
+    wnba.map((game) => allGamesReturn.push(game));
+    ncaaMensBasketball.map((game) => allGamesReturn.push(game));
+    ncaaWomensBasketball.map((game) => allGamesReturn.push(game));
+
+    mls.map((game) => allGamesReturn.push(game));
 
     allGamesReturn.sort((a, b) => {
         const dateA = new Date(a.dateTime);
@@ -82,12 +106,10 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
         const stadiumInfo = stadiums.find(info => info.id == venueID && info.venue_name == venueName);
 
         if (stadiumInfo) {
-            console.log(game.competitions[0].notes)
             const homeTeam = game.competitions[0].competitors[0].team.displayName;
             const awayTeam = game.competitions[0].competitors[1].team.displayName;
             const neutralSite = game.competitions[0].neutralSite;
             const gameNote = game.competitions[0].notes.length > 0 ?  game.competitions[0].notes[0].headline :  null
-            console.log(game.competitions[0].notes)
             const homeRecord = () => {
                 try {
                     return game.competitions[0].competitors[0].records[0].summary;
@@ -154,7 +176,8 @@ export const VenuImageCollector = async (venuID, sport, league) => {
             return error;
         });
 
-    return response.data.images[0].href;
+    try {return response.data.images[0].href}
+    catch {return null}
 };
 
 const DAYNAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];

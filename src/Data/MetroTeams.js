@@ -5178,13 +5178,6 @@ export const TeamsCatalog = [
                 },
             },
             {
-                venue_name: 'Rogers Arena',
-                id: '1833',
-                link: {
-                    $ref: 'http://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/venues/1833?lang=en&region=us',
-                },
-            },
-            {
                 venue_name: 'Stott Center',
                 id: '2026',
                 link: {
