@@ -82,10 +82,12 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
         const stadiumInfo = stadiums.find(info => info.id == venueID && info.venue_name == venueName);
 
         if (stadiumInfo) {
+            console.log(game.competitions[0].notes)
             const homeTeam = game.competitions[0].competitors[0].team.displayName;
             const awayTeam = game.competitions[0].competitors[1].team.displayName;
             const neutralSite = game.competitions[0].neutralSite;
-
+            const gameNote = game.competitions[0].notes.length > 0 ?  game.competitions[0].notes[0].headline :  null
+            console.log(game.competitions[0].notes)
             const homeRecord = () => {
                 try {
                     return game.competitions[0].competitors[0].records[0].summary;
@@ -131,7 +133,8 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
                 league: league,
                 fullInfo: game,
                 gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
-                neutralSite: neutralSite
+                neutralSite: neutralSite,
+                gameNote: gameNote
             });
         }
     });
