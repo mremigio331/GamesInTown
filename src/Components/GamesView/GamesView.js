@@ -1,14 +1,5 @@
 import * as React from 'react';
-import {
-    Cards,
-    ColumnLayout,
-    Button,
-    Box,
-    Header,
-    PropertyFilter,
-    SpaceBetween,
-    TextFilter,
-} from '@cloudscape-design/components';
+import { Cards, ColumnLayout, Box, Header, SpaceBetween, TextFilter } from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { VenuImageCollector } from '../../api/api_calls';
 
@@ -55,9 +46,7 @@ const GameCardDescription = ({ item }) => {
         <ColumnLayout columns={2} variant="text-grid">
             <div>
                 <SpaceBetween>
-                    {
-                        item.gameNote != null &&  <Box variant="h1">{item.gameNote}</Box>
-                    }
+                    {item.gameNote != null && <Box variant="h1">{item.gameNote}</Box>}
                     <Box variant="awsui-key-label">Date/Time</Box>
                     <div>{`${item.dayOfTheWeek} ${item.dateTime}`}</div>
                     <Box variant="awsui-key-label">Venu</Box>

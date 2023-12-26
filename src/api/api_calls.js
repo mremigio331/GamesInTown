@@ -11,24 +11,45 @@ export const getAllGames = async (startDate, endDate, metroAreaTeams, stadiums) 
 
     // football
     const nfl = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'football', 'nfl');
-    const ncaaFootball = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'football', 'college-football');
+    const ncaaFootball = await FullGamesReturn(
+        startDate,
+        endDate,
+        metroAreaTeams,
+        stadiums,
+        'football',
+        'college-football',
+    );
 
     // basketball
     const nba = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'nba');
     const wnba = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'wnba');
-    const ncaaMensBasketball = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'mens-college-basketball');
-    const ncaaWomensBasketball = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'basketball', 'womens-college-basketball');
-    
-    // soccer 
+    const ncaaMensBasketball = await FullGamesReturn(
+        startDate,
+        endDate,
+        metroAreaTeams,
+        stadiums,
+        'basketball',
+        'mens-college-basketball',
+    );
+    const ncaaWomensBasketball = await FullGamesReturn(
+        startDate,
+        endDate,
+        metroAreaTeams,
+        stadiums,
+        'basketball',
+        'womens-college-basketball',
+    );
+
+    // soccer
     const mls = await FullGamesReturn(startDate, endDate, metroAreaTeams, stadiums, 'soccer', 'usa.1');
 
     mlb.map((game) => allGamesReturn.push(game));
-    
+
     nhl.map((game) => allGamesReturn.push(game));
-    
+
     nfl.map((game) => allGamesReturn.push(game));
     ncaaFootball.map((game) => allGamesReturn.push(game));
-    
+
     nba.map((game) => allGamesReturn.push(game));
     wnba.map((game) => allGamesReturn.push(game));
     ncaaMensBasketball.map((game) => allGamesReturn.push(game));
@@ -62,11 +83,9 @@ const TimeZoneIdentifier = (metroAreaTeams, specificTeam) => {
     });
     try {
         return highlightTeamInfo[0].timeZone;
+    } catch {
+        return metroAreaTeams[0].timeZone;
     }
-    catch {
-        return metroAreaTeams[0].timeZone
-    }
-    
 };
 
 const DatesIdentifier = (startDate, endDate) => {
@@ -103,13 +122,13 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
         const venueID = game.competitions[0].venue.id;
         const venueName = game.competitions[0].venue.fullName;
 
-        const stadiumInfo = stadiums.find(info => info.id == venueID && info.venue_name == venueName);
+        const stadiumInfo = stadiums.find((info) => info.id == venueID && info.venue_name == venueName);
 
         if (stadiumInfo) {
             const homeTeam = game.competitions[0].competitors[0].team.displayName;
             const awayTeam = game.competitions[0].competitors[1].team.displayName;
             const neutralSite = game.competitions[0].neutralSite;
-            const gameNote = game.competitions[0].notes.length > 0 ?  game.competitions[0].notes[0].headline :  null
+            const gameNote = game.competitions[0].notes.length > 0 ? game.competitions[0].notes[0].headline : null;
             const homeRecord = () => {
                 try {
                     return game.competitions[0].competitors[0].records[0].summary;
@@ -127,10 +146,10 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
             };
 
             const dateTime = new Date(game.date).toLocaleString('en-US', {
-                timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam)
+                timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam),
             });
 
-            const dayOfTheWeek = DAYNAMES[new Date(dateTime).getDay()]
+            const dayOfTheWeek = DAYNAMES[new Date(dateTime).getDay()];
             allGames.push({
                 dateTime: dateTime,
                 dayOfTheWeek: dayOfTheWeek,
@@ -156,14 +175,13 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
                 fullInfo: game,
                 gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
                 neutralSite: neutralSite,
-                gameNote: gameNote
+                gameNote: gameNote,
             });
         }
     });
 
     return allGames;
 };
-
 
 export const VenuImageCollector = async (venuID, sport, league) => {
     const requestURL = `https://sports.core.api.espn.com/v2/sports/${sport}/leagues/${league}/venues/${venuID}?lang=en&region=us`;
@@ -176,8 +194,11 @@ export const VenuImageCollector = async (venuID, sport, league) => {
             return error;
         });
 
-    try {return response.data.images[0].href}
-    catch {return null}
+    try {
+        return response.data.images[0].href;
+    } catch {
+        return null;
+    }
 };
 
 const DAYNAMES = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
