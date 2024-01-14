@@ -12,7 +12,7 @@ export default () => {
         <TopNavigation
             identity={{
                 href: '/',
-                title: 'Teams In Town',
+                title: 'Games In Town',
             }}
         />
     );

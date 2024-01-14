@@ -92,9 +92,6 @@ const DatesIdentifier = (startDate, endDate) => {
     startDate = startDate.replaceAll('-', '/');
     endDate = endDate.replaceAll('-', '/');
 
-    const setStartDate = new Date(startDate);
-    const setEndDate = new Date(endDate);
-
     for (var dates = [], dt = new Date(startDate); dt <= new Date(endDate); dt.setDate(dt.getDate() + 1)) {
         dates.push(new Date(dt).toISOString().split('T')[0].replaceAll('-', ''));
     }
@@ -119,7 +116,8 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
     let allGames = [];
 
     games.forEach((game) => {
-        const venueID = game.competitions[0].venue.id;
+        try {
+            const venueID = game.competitions[0].venue.id;
         const venueName = game.competitions[0].venue.fullName;
 
         const stadiumInfo = stadiums.find((info) => info.id == venueID && info.venue_name == venueName);
@@ -176,8 +174,12 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
                 gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
                 neutralSite: neutralSite,
                 gameNote: gameNote,
-            });
+            })
         }
+          } catch  {
+            // most likely one of the games doesn't have the full info, safe to skip
+          }
+        
     });
 
     return allGames;

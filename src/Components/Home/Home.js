@@ -99,7 +99,7 @@ const Home = () => {
                                     )
                                 }
                             >
-                                Teams In Town
+                                Games In Town
                             </Header>
                         </SpaceBetween>
                     }
