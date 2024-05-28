@@ -142,7 +142,7 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
             }}
             cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 2 }]}
             items={items}
-            loadingText="Loading resources"
+            loadingText="Loading Teams"
             trackBy="name"
             visibleSections={['MLB', 'NBA', 'NFL', 'NHL', 'MLS']}
             empty={

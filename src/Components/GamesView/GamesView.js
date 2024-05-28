@@ -50,7 +50,7 @@ const GameCardDescription = ({ item }) => {
                     <Box variant="awsui-key-label">Date/Time</Box>
                     <div>{`${item.dayOfTheWeek} ${item.dateTime}`}</div>
                     <Box variant="awsui-key-label">Venu</Box>
-                    <div>{`${item.location.venue} (Capacity: ${item.location.capacity})`}</div>
+                    <div>{`${item.location.venue}`}</div>
                     <div>{`${item.location.city}, ${item.location.state}`}</div>
                     <Box variant="awsui-key-label">Type</Box>
                     <div>{item.gameType}</div>

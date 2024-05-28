@@ -1,4 +1,4 @@
-# Games In Town
+# Teams In Town
 ![Output](src/images/games_view.png)
 
 Game In Town will display every major sports game within a metro area in the US/Canada within a specific date range.
