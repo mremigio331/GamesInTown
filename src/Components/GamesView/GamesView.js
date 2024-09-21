@@ -1,5 +1,14 @@
 import * as React from 'react';
-import { Cards, ColumnLayout, Box, Header, SpaceBetween, TextFilter } from '@cloudscape-design/components';
+import {
+    Cards,
+    ColumnLayout,
+    Box,
+    Header,
+    Link,
+    SpaceBetween,
+    TextFilter,
+    Pagination,
+} from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { VenuImageCollector } from '../../api/api_calls';
 
@@ -61,6 +70,13 @@ const GameCardDescription = ({ item }) => {
                     <Box float="right">
                         {venueImage == null ? null : <img width="400" height="200" src={venueImage} />}
                     </Box>
+                    <Box fontSize="display-l" fontWeight="bold" float="right" textAlign="right">
+                        {item.tickets != null && (
+                            <Link external variant="primary" href={item.tickets.links[0].href}>
+                                {item.tickets.summary}
+                            </Link>
+                        )}
+                    </Box>
                 </SpaceBetween>
             </div>
         </ColumnLayout>
@@ -71,78 +87,81 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
     const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps, propertyFilterProps } =
         useCollection(allGames, {
             filtering: {},
-            pagination: { pageSize: 10 },
+            pagination: { pageSize: 20 },
         });
 
     return (
-        <Cards
-            {...actions}
-            {...collectionProps}
-            stickyHeader
-            stickyHeaderVerticalOffset={20}
-            ariaLabels={{
-                itemSelectionLabel: (e, n) => `select ${n.metroArea}`,
-                selectionGroupLabel: 'Item selection',
-            }}
-            cardDefinition={{
-                header: (item) => <GameCardHeader item={item} />,
-                sections: [
-                    {
-                        id: 'gameInfo',
-                        content: (item) => <GameCardDescription item={item} />,
-                    },
-                    {
-                        id: 'time',
-                        header: 'Date Time',
-                        content: (item) => `${item.dayOfTheWeek} ${item.dateTime}`,
-                    },
-                    {
-                        id: 'venue',
-                        header: 'Venue',
-                        content: (item) => `${item.location.venue} (Capacity: ${item.location.capacity})`,
-                    },
-                    {
-                        id: 'location',
-                        header: 'Location',
-                        content: (item) => `${item.location.city}, ${item.location.state}`,
-                    },
-                    {
-                        id: 'gameType',
-                        header: 'Game Type',
-                        content: (item) => item.gameType,
-                    },
-                    {
-                        id: 'leage',
-                        header: 'League',
-                        content: (item) => item.league,
-                    },
-                    {
-                        id: 'homeTeam',
-                        header: 'HomeTeam',
-                        content: (item) => item.homeTeam.teamName,
-                    },
-                    {
-                        id: 'awayTeam',
-                        header: 'awayTeam',
-                        content: (item) => item.awayTeam.teamName,
-                    },
-                ],
-            }}
-            filter={<TextFilter filteringPlaceholder="Teams" {...filterProps} />}
-            visibleSections={['gameInfo']}
-            cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 1 }]}
-            items={items}
-            loading={loading}
-            loadingText="Loading Games"
-            empty={
-                <Box margin={{ vertical: 'xs' }} textAlign="center" color="inherit">
-                    <SpaceBetween size="m">
-                        <b>No Games</b>
-                    </SpaceBetween>
-                </Box>
-            }
-            header={<Header counter={filteredItemsCount}>Games</Header>}
-        />
+        <>
+            <Cards
+                {...actions}
+                {...collectionProps}
+                stickyHeader
+                stickyHeaderVerticalOffset={20}
+                ariaLabels={{
+                    itemSelectionLabel: (e, n) => `select ${n.metroArea}`,
+                    selectionGroupLabel: 'Item selection',
+                }}
+                cardDefinition={{
+                    header: (item) => <GameCardHeader item={item} />,
+                    sections: [
+                        {
+                            id: 'gameInfo',
+                            content: (item) => <GameCardDescription item={item} />,
+                        },
+                        {
+                            id: 'time',
+                            header: 'Date Time',
+                            content: (item) => `${item.dayOfTheWeek} ${item.dateTime}`,
+                        },
+                        {
+                            id: 'venue',
+                            header: 'Venue',
+                            content: (item) => `${item.location.venue} (Capacity: ${item.location.capacity})`,
+                        },
+                        {
+                            id: 'location',
+                            header: 'Location',
+                            content: (item) => `${item.location.city}, ${item.location.state}`,
+                        },
+                        {
+                            id: 'gameType',
+                            header: 'Game Type',
+                            content: (item) => item.gameType,
+                        },
+                        {
+                            id: 'league',
+                            header: 'League',
+                            content: (item) => item.league,
+                        },
+                        {
+                            id: 'homeTeam',
+                            header: 'HomeTeam',
+                            content: (item) => item.homeTeam.teamName,
+                        },
+                        {
+                            id: 'awayTeam',
+                            header: 'awayTeam',
+                            content: (item) => item.awayTeam.teamName,
+                        },
+                    ],
+                }}
+                filter={<TextFilter filteringPlaceholder="Teams" {...filterProps} />}
+                pagination={<Pagination {...paginationProps} />}
+                visibleSections={['gameInfo']}
+                cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 1 }]}
+                items={items}
+                loading={loading}
+                loadingText="Loading Games"
+                empty={
+                    <Box margin={{ vertical: 'xs' }} textAlign="center" color="inherit">
+                        <SpaceBetween size="m">
+                            <b>No Games</b>
+                        </SpaceBetween>
+                    </Box>
+                }
+                header={<Header counter={filteredItemsCount}>Games</Header>}
+            />
+        </>
     );
 };
 

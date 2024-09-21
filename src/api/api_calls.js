@@ -44,8 +44,6 @@ export const getAllGames = async (startDate, endDate, metroAreaTeams, stadiums) 
     ncaaWomensBasketball.map((game) => allGamesReturn.push(game));
     mls.map((game) => allGamesReturn.push(game));
 
-    console.log('MLS', mls)
-
     allGamesReturn.sort((a, b) => {
         const dateA = new Date(a.dateTime);
         const dateB = new Date(b.dateTime);
@@ -89,7 +87,6 @@ const DatesIdentifier = (startDate, endDate) => {
 
 const ESPNAPI = async (sport, league, date) => {
     const requestURL = `https://site.api.espn.com/apis/site/v2/sports/${sport}/${league}/scoreboard?calendartype=whitelist&limit=100&dates=${date}`;
-    
     const response = await axios
         .get(requestURL)
         .then((res) => {
@@ -104,73 +101,75 @@ const ESPNAPI = async (sport, league, date) => {
 
 const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, sport) => {
     let allGames = [];
-    sport == 'soccer' && console.log(games)
+    // sport == 'soccer' && console.log(games)
 
     games.forEach((game) => {
         try {
             const venueID = game.competitions[0].venue.id;
-        const venueName = game.competitions[0].venue.fullName;
+            const venueName = game.competitions[0].venue.fullName;
 
-        const stadiumInfo = stadiums.find((info) => info.id == venueID && info.venue_name == venueName);
+            const tickets = game.competitions[0].tickets ? game.competitions[0].tickets[0] : null;
 
-        if (stadiumInfo) {
-            const homeTeam = game.competitions[0].competitors[0].team.displayName;
-            const awayTeam = game.competitions[0].competitors[1].team.displayName;
-            const neutralSite = game.competitions[0].neutralSite;
-            const gameNote = game.competitions[0].notes.length > 0 ? game.competitions[0].notes[0].headline : null;
-            const homeRecord = () => {
-                try {
-                    return game.competitions[0].competitors[0].records[0].summary;
-                } catch {
-                    return null;
-                }
-            };
+            const stadiumInfo = stadiums.find((info) => info.id == venueID && info.venue_name == venueName);
 
-            const awayRecord = () => {
-                try {
-                    return game.competitions[0].competitors[1].records[0].summary;
-                } catch {
-                    return null;
-                }
-            };
+            if (stadiumInfo) {
+                const homeTeam = game.competitions[0].competitors[0].team.displayName;
+                const awayTeam = game.competitions[0].competitors[1].team.displayName;
+                const neutralSite = game.competitions[0].neutralSite;
+                const gameNote = game.competitions[0].notes.length > 0 ? game.competitions[0].notes[0].headline : null;
+                const homeRecord = () => {
+                    try {
+                        return game.competitions[0].competitors[0].records[0].summary;
+                    } catch {
+                        return null;
+                    }
+                };
 
-            const dateTime = new Date(game.date).toLocaleString('en-US', {
-                timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam),
-            });
+                const awayRecord = () => {
+                    try {
+                        return game.competitions[0].competitors[1].records[0].summary;
+                    } catch {
+                        return null;
+                    }
+                };
 
-            const dayOfTheWeek = DAYNAMES[new Date(dateTime).getDay()];
-            allGames.push({
-                dateTime: dateTime,
-                dayOfTheWeek: dayOfTheWeek,
-                location: {
-                    venue: game.competitions[0].venue.fullName,
-                    city: game.competitions[0].venue.address.city,
-                    state: game.competitions[0].venue.address.state,
-                    capacity: game.competitions[0].venue.capacity,
-                    venueId: game.competitions[0].venue.id,
-                },
-                homeTeam: {
-                    teamName: homeTeam,
-                    record: homeRecord(),
-                    logo: game.competitions[0].competitors[0].team.logo,
-                },
-                awayTeam: {
-                    teamName: awayTeam,
-                    record: awayRecord(),
-                    logo: game.competitions[0].competitors[1].team.logo,
-                },
-                sport: sport,
-                league: league,
-                fullInfo: game,
-                gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
-                neutralSite: neutralSite,
-                gameNote: gameNote,
-            })
-        }
-          } catch  {
+                const dateTime = new Date(game.date).toLocaleString('en-US', {
+                    timeZone: TimeZoneIdentifier(metroAreaTeams, homeTeam),
+                });
+
+                const dayOfTheWeek = DAYNAMES[new Date(dateTime).getDay()];
+                allGames.push({
+                    dateTime: dateTime,
+                    dayOfTheWeek: dayOfTheWeek,
+                    location: {
+                        venue: game.competitions[0].venue.fullName,
+                        city: game.competitions[0].venue.address.city,
+                        state: game.competitions[0].venue.address.state,
+                        capacity: game.competitions[0].venue.capacity,
+                        venueId: game.competitions[0].venue.id,
+                    },
+                    homeTeam: {
+                        teamName: homeTeam,
+                        record: homeRecord(),
+                        logo: game.competitions[0].competitors[0].team.logo,
+                    },
+                    awayTeam: {
+                        teamName: awayTeam,
+                        record: awayRecord(),
+                        logo: game.competitions[0].competitors[1].team.logo,
+                    },
+                    sport: sport,
+                    league: league,
+                    fullInfo: game,
+                    gameType: game.season.slug.replace('-', ' ').replace(/(^\w|\s\w)/g, (m) => m.toUpperCase()),
+                    neutralSite: neutralSite,
+                    gameNote: gameNote,
+                    tickets: tickets,
+                });
+            }
+        } catch {
             // most likely one of the games doesn't have the full info, safe to skip
-          }
-        
+        }
     });
 
     return allGames;
@@ -178,7 +177,7 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
 
 export const VenuImageCollector = async (venuID, sport, league) => {
     const requestURL = `https://sports.core.api.espn.com/v2/sports/${sport}/leagues/${league}/venues/${venuID}?lang=en&region=us`;
-    
+
     const response = await axios
         .get(requestURL)
         .then((res) => {
