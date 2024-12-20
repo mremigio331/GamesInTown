@@ -15,24 +15,24 @@ import { useCollection } from '@cloudscape-design/collection-hooks';
 import { getAllGames } from '../../api/api_calls';
 import { useDevice } from '../../Provider/DeviceProvider';
 
-const TeamPopover = ({ teamInfo }) => {
+const TeamPopover = ({ teamInfo, isMobile }) => {
     return (
         <Box>
             <Popover
                 content={
-                    <SpaceBetween size="l">
+                    <SpaceBetween size={isMobile ? 'xl' : 'l'}>
                         <div>
-                            <Box variant="awsui-key-label">City</Box>
-                            <Box>{teamInfo.city}</Box>
+                            <Box fontSize={isMobile ? 'heading-m' : 'awsui-key-label'}>City</Box>
+                            <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>{teamInfo.city}</Box>
                         </div>
                         <div>
-                            <Box variant="awsui-key-label">State</Box>
-                            <div>{teamInfo.state}</div>
+                            <Box fontSize={isMobile ? 'heading-m' : 'awsui-key-label'}>State</Box>
+                            <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>{teamInfo.state}</Box>
                         </div>
                     </SpaceBetween>
                 }
             >
-                {teamInfo.teamName}
+                <Box fontSize={isMobile ? 'heading-l' : 'heading-m'}>{teamInfo.teamName}</Box>
             </Popover>
         </Box>
     );
@@ -77,8 +77,10 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                     <Header
                         variant="h1"
                         counter={item.teams.length}
+                        fontSize={isMobile ? 'display-l' : 'heading-m'} // Larger font size for mobile
                         actions={
                             <Button
+                                fontSize={isMobile ? 'body-m' : 'body-s'} // Larger button text size for mobile
                                 variant="primary"
                                 onClick={async () => {
                                     dispatch({
@@ -109,37 +111,50 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                 sections: [
                     {
                         id: 'NFL',
-                        header: 'NFL',
+                        header: <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>NFL</Box>,
                         content: (item) =>
-                            item.teams.map((team) => (team.league == 'NFL' ? <TeamPopover teamInfo={team} /> : null)),
+                            item.teams.map((team) =>
+                                team.league === 'NFL' ? <TeamPopover teamInfo={team} isMobile={isMobile} /> : null,
+                            ),
                     },
                     {
                         id: 'NBA',
-                        header: 'NBA',
+                        header: <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>NBA</Box>,
                         content: (item) =>
-                            item.teams.map((team) => (team.league == 'NBA' ? <TeamPopover teamInfo={team} /> : null)),
+                            item.teams.map((team) =>
+                                team.league === 'NBA' ? <TeamPopover teamInfo={team} isMobile={isMobile} /> : null,
+                            ),
                     },
                     {
                         id: 'MLB',
-                        header: 'MLB',
+                        header: <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>MLB</Box>,
                         content: (item) =>
-                            item.teams.map((team) => (team.league == 'MLB' ? <TeamPopover teamInfo={team} /> : null)),
+                            item.teams.map((team) =>
+                                team.league === 'MLB' ? <TeamPopover teamInfo={team} isMobile={isMobile} /> : null,
+                            ),
                     },
                     {
                         id: 'NHL',
-                        header: 'NHL',
+                        header: <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>NHL</Box>,
                         content: (item) =>
-                            item.teams.map((team) => (team.league == 'NHL' ? <TeamPopover teamInfo={team} /> : null)),
+                            item.teams.map((team) =>
+                                team.league === 'NHL' ? <TeamPopover teamInfo={team} isMobile={isMobile} /> : null,
+                            ),
                     },
                     {
                         id: 'MLS',
-                        header: 'MLS',
+                        header: <Box fontSize={isMobile ? 'heading-m' : 'body-m'}>MLS</Box>,
                         content: (item) =>
-                            item.teams.map((team) => (team.league == 'MLS' ? <TeamPopover teamInfo={team} /> : null)),
+                            item.teams.map((team) =>
+                                team.league === 'MLS' ? <TeamPopover teamInfo={team} isMobile={isMobile} /> : null,
+                            ),
                     },
                     {
                         id: 'Teams',
-                        content: (item) => item.teams.map((team) => team.teamName),
+                        content: (item) =>
+                            item.teams.map((team) => (
+                                <Box fontSize={isMobile ? 'heading-s' : 'body-m'}>{team.teamName}</Box>
+                            )),
                     },
                 ],
             }}
@@ -157,7 +172,11 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                 </Box>
             }
             filter={<TextFilter filteringPlaceholder="Metro Area" {...filterProps} />}
-            header={<Header counter={filteredItemsCount}>Select A Metro Area</Header>}
+            header={
+                <Header fontSize={isMobile ? 'display-l' : 'heading-m'} counter={filteredItemsCount}>
+                    Select A Metro Area
+                </Header>
+            }
             pagination={<TeamsPagination />}
             preferences={
                 <CollectionPreferences

@@ -18,49 +18,37 @@ const GameCardHeader = ({ item }) => {
     const isMobile = useDevice();
 
     return (
-        <ColumnLayout columns={2} variant="text-grid">
-            <div>
-                <SpaceBetween>
-                    <Box
-                        fontSize={isMobile ? 'heading-m' : 'display-l'} // Smaller font size for isMobile
-                        fontWeight="bold"
-                    >
-                        {item.awayTeam.logo && (
-                            <img
-                                width={isMobile ? '30' : '50'} // Smaller image size for isMobile
-                                height={isMobile ? '30' : '50'}
-                                src={item.awayTeam.logo}
-                                alt={`${item.awayTeam.teamName} logo`}
-                            />
-                        )}
-                        {item.awayTeam.teamName}
-                    </Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'}>{item.awayTeam.record}</Box>
-                </SpaceBetween>
-            </div>
-            <div>
-                <SpaceBetween>
-                    <Box
-                        fontSize={isMobile ? 'heading-m' : 'display-l'} // Smaller font size for isMobile
-                        fontWeight="bold"
-                        float="right"
-                    >
-                        {item.homeTeam.teamName}
-                        {item.homeTeam.logo && (
-                            <img
-                                width={isMobile ? '30' : '50'} // Smaller image size for isMobile
-                                height={isMobile ? '30' : '50'}
-                                src={item.homeTeam.logo}
-                                alt={`${item.homeTeam.teamName} logo`}
-                            />
-                        )}
-                    </Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'} float="right">
-                        {item.homeTeam.record}
-                    </Box>
-                </SpaceBetween>
-            </div>
-        </ColumnLayout>
+        <SpaceBetween direction={'vertical'}>
+            <SpaceBetween direction="horizontal" size="s">
+                <Box fontSize={'display-l'} fontWeight="bold">
+                    {item.awayTeam.logo && (
+                        <img
+                            width={isMobile ? '40' : '50'}
+                            height={isMobile ? '40' : '50'}
+                            src={item.awayTeam.logo}
+                            alt={`${item.awayTeam.teamName} logo`}
+                        />
+                    )}
+                    {item.awayTeam.teamName}
+                </Box>
+                <Box fontSize={isMobile ? 'body-s' : 'body-m'}>{item.awayTeam.record}</Box>
+            </SpaceBetween>
+            <Box fontSize={isMobile ? 'display-s' : 'display-m'}>@</Box>
+            <SpaceBetween direction="horizontal" size="s">
+                <Box fontSize={'display-l'} fontWeight="bold">
+                    {item.homeTeam.logo && (
+                        <img
+                            width={isMobile ? '40' : '50'} // Smaller image size for isMobile
+                            height={isMobile ? '40' : '50'}
+                            src={item.homeTeam.logo}
+                            alt={`${item.homeTeam.teamName} logo`}
+                        />
+                    )}
+                    {item.homeTeam.teamName}
+                </Box>
+                <Box fontSize={isMobile ? 'body-s' : 'body-m'}>{item.homeTeam.record}</Box>
+            </SpaceBetween>
+        </SpaceBetween>
     );
 };
 
@@ -90,36 +78,45 @@ const GameCardDescription = ({ item }) => {
                             {item.gameNote}
                         </Box>
                     )}
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'} fontWeight="bold">
+                    <Box fontSize={isMobile ? 'body-s' : 'body-l'} fontWeight="bold">
                         Date/Time
                     </Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'}>{`${item.dayOfTheWeek} ${item.dateTime}`}</Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'} fontWeight="bold">
+                    <Box fontSize={isMobile ? 'body-s' : 'body-l'}>{`${item.dayOfTheWeek} ${item.dateTime}`}</Box>
+                    <Box fontSize={isMobile ? 'body-s' : 'body-l'} fontWeight="bold">
                         Venue
                     </Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'}>{`${item.location.venue}`}</Box>
+                    <Box fontSize={isMobile ? 'body-s' : 'body-l'}>{`${item.location.venue}`}</Box>
                     <Box
-                        fontSize={isMobile ? 'body-s' : 'body-m'}
+                        fontSize={isMobile ? 'body-s' : 'body-l'}
                     >{`${item.location.city}, ${item.location.state}`}</Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'} fontWeight="bold">
+                    <Box fontSize={isMobile ? 'body-s' : 'body-l'} fontWeight="bold">
                         Type
                     </Box>
-                    <Box fontSize={isMobile ? 'body-s' : 'body-m'}>{item.gameType}</Box>
+                    <Box fontSize={isMobile ? 'body-s' : 'body-l'}>{item.gameType}</Box>
                 </SpaceBetween>
             </div>
             <div>
                 <SpaceBetween size={isMobile ? 'xs' : 'm'}>
-                    <Box float="right">
+                    <Box
+                        display="flex"
+                        justifyContent="center"
+                        alignItems="center"
+                        width="100%"
+                        height={isMobile ? '150px' : '300px'}
+                    >
                         {venueImage && (
                             <img
-                                width={isMobile ? '200' : '400'} // Smaller image width for mobile
-                                height={isMobile ? '100' : '200'} // Smaller image height for mobile
                                 src={venueImage}
                                 alt={`${item.location.venue} venue`}
+                                style={{
+                                    width: isMobile ? '100%' : '25%',
+                                    height: isMobile ? '100%' : '25%',
+                                    objectFit: isMobile ? 'cover' : 'contain',
+                                }}
                             />
                         )}
                     </Box>
-                    <Box fontSize={isMobile ? 'body-m' : 'display-l'} fontWeight="bold" float="right" textAlign="right">
+                    <Box fontSize={isMobile ? 'body-m' : 'display-l'} fontWeight="bold" textAlign="right">
                         {item.tickets != null && (
                             <Link external variant="primary" href={item.tickets.links[0].href}>
                                 {item.tickets.summary}
