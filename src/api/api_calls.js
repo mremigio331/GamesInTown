@@ -49,6 +49,13 @@ export const getAllGames = async (startDate, endDate, metroAreaTeams, stadiums) 
         const dateB = new Date(b.dateTime);
         return dateA - dateB;
     });
+
+    allGamesReturn = allGamesReturn.filter(
+        (game, index, self) =>
+            index ===
+            self.findIndex((t) => t.dateTime === game.dateTime && t.location.venueId === game.location.venueId),
+    );
+
     return allGamesReturn;
 };
 
