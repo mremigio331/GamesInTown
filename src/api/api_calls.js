@@ -186,7 +186,7 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
     return allGames;
 };
 
-export const VenuImageCollector = async (venuID, sport, league) => {
+export const VenueImageCollector = async (venuID, sport, league) => {
     const requestURL = `https://sports.core.api.espn.com/v2/sports/${sport}/leagues/${league}/venues/${venuID}?lang=en&region=us`;
 
     const response = await axios

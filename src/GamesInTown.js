@@ -1,9 +1,7 @@
 import * as React from 'react';
 import '@cloudscape-design/components';
-import { useCookies } from 'react-cookie';
 import NavBar from './NavBar';
 import PageLocations from './Components/PageLocations/PageLocations';
-import { applyMode, applyDensity, Density, Mode } from '@cloudscape-design/global-styles';
 
 const GamesInTown = () => {
     document.title = 'Teams In Town';

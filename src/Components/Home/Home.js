@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useReducer } from 'react';
 import { TeamsCatalog } from '../../Data/MetroTeams';
-import NavBar from '../../NavBar';
 import { AppLayout, Container, ContentLayout, Header, SpaceBetween, Button } from '@cloudscape-design/components';
 import { useDarkMode } from '../../Provider/ThemeProvider';
 import MetroCards from '../MetroCards/MetroCards';
@@ -80,7 +79,6 @@ const Home = () => {
     const [allGames, setAllGames] = React.useState([]);
 
     const { theme } = useDarkMode();
-    console.log('PageTheme', theme);
 
     React.useEffect(() => {
         const rootElement = document.documentElement;
@@ -97,7 +95,6 @@ const Home = () => {
             headerSelector="#h"
             navigationHide
             toolsHide
-            navigation={<NavBar />}
             content={
                 <ContentLayout
                     header={

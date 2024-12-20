@@ -13,6 +13,7 @@ import {
 } from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { getAllGames } from '../../api/api_calls';
+import { useDevice } from '../../Provider/DeviceProvider';
 
 const TeamPopover = ({ teamInfo }) => {
     return (
@@ -38,6 +39,8 @@ const TeamPopover = ({ teamInfo }) => {
 };
 
 const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, setLoading }) => {
+    const { isMobile } = useDevice();
+
     const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps } = useCollection(
         TeamsCatalog,
         {
@@ -140,7 +143,7 @@ const MetroCards = ({ dispatch, currentState, allGames, setAllGames, loading, se
                     },
                 ],
             }}
-            cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 2 }]}
+            cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: isMobile ? 1 : 2 }]}
             items={items}
             loadingText="Loading Teams"
             trackBy="name"
