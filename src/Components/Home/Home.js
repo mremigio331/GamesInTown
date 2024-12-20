@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useReducer } from 'react';
 import { TeamsCatalog } from '../../Data/MetroTeams';
-
+import NavBar from '../../NavBar';
 import { AppLayout, Container, ContentLayout, Header, SpaceBetween, Button } from '@cloudscape-design/components';
-
+import { useDarkMode } from '../../Provider/ThemeProvider';
 import MetroCards from '../MetroCards/MetroCards';
 import GamesCards from '../GamesView/GamesView';
 import Calendar from '../GamesView/Calendar';
@@ -79,11 +79,25 @@ const Home = () => {
     const [loading, setLoading] = React.useState(true);
     const [allGames, setAllGames] = React.useState([]);
 
+    const { theme } = useDarkMode();
+    console.log('PageTheme', theme);
+
+    React.useEffect(() => {
+        const rootElement = document.documentElement;
+
+        if (theme === 'dark') {
+            rootElement.classList.add('awsui-dark-mode');
+        } else {
+            rootElement.classList.remove('awsui-dark-mode');
+        }
+    }, [theme]);
+
     return (
         <AppLayout
             headerSelector="#h"
             navigationHide
             toolsHide
+            navigation={<NavBar />}
             content={
                 <ContentLayout
                     header={
