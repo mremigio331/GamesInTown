@@ -172,6 +172,10 @@ const UpdatedESPNScrubber = async (metroAreaTeams, stadiums, games, league, spor
                     neutralSite: neutralSite,
                     gameNote: gameNote,
                     tickets: tickets,
+                    homeTeamName: homeTeam,
+                    awayTeamName: awayTeam,
+                    cityLocation: game.competitions[0].venue.address.city,
+                    stateLocation: game.competitions[0].venue.address.state,
                 });
             }
         } catch {

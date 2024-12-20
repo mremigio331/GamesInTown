@@ -8,9 +8,11 @@ import {
     SpaceBetween,
     TextFilter,
     Pagination,
+    PropertyFilter,
 } from '@cloudscape-design/components';
 import { useCollection } from '@cloudscape-design/collection-hooks';
 import { VenuImageCollector } from '../../api/api_calls';
+import { propertyFilteringProperties } from '../../config/PropertyFilteringProperties';
 
 const GameCardHeader = ({ item }) => {
     return (
@@ -84,9 +86,13 @@ const GameCardDescription = ({ item }) => {
 };
 
 const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }) => {
+    console.log('AllGamees', allGames);
+
     const { items, actions, filteredItemsCount, filterProps, paginationProps, collectionProps, propertyFilterProps } =
         useCollection(allGames, {
-            filtering: {},
+            propertyFiltering: {
+                filteringProperties: propertyFilteringProperties,
+            },
             pagination: { pageSize: 20 },
         });
 
@@ -145,7 +151,7 @@ const GamesCards = ({ currentState, allGames, setAllGames, loading, setLoading }
                         },
                     ],
                 }}
-                filter={<TextFilter filteringPlaceholder="Teams" {...filterProps} />}
+                filter={<PropertyFilter {...propertyFilterProps} />}
                 pagination={<Pagination {...paginationProps} />}
                 visibleSections={['gameInfo']}
                 cardsPerRow={[{ cards: 1 }, { minWidth: 500, cards: 1 }]}
